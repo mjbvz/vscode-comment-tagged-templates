@@ -81,16 +81,16 @@ For IntelliSense and more advanced embedded language support, checkout these ext
 
 # Contributing
 
-To built this extension, you'll need [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/).
+To build this extension, you'll need [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/).
 
 First, [fork](https://help.github.com/articles/fork-a-repo/) this repo and clone your fork:
 
 ```bash
 git clone https://github.com/YOUR_GITHUB_ACCOUNT_NAME/vscode-comment-tagged-templates.git
-cd vscode-comment-tagged-templates
+code vscode-comment-tagged-templates
 ```
 
-Then install dev dependencies:
+Then install dev dependencies using npm:
 
 ```bash
 npm install
