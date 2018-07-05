@@ -1,6 +1,6 @@
 {
     "fileTypes": [],
-    "injectionSelector": "L:source.js -comment -(string - meta.embedded), L:source.jsx -comment -(string - meta.embedded),  L:source.js.jsx -comment -(string - meta.embedded), L:source.ts -comment -(string - meta.embedded), L:source.tsx -comment -(string - meta.embedded)",
+    "injectionSelector": "L:source.js -comment -(string - meta.embedded), L:source.jsx -comment -(string - meta.embedded), L:source.js.jsx -comment -(string - meta.embedded), L:source.ts -comment -(string - meta.embedded), L:source.tsx -comment -(string - meta.embedded)",
     "patterns": [
         {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.css",
@@ -27,6 +27,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.css"
                 }
@@ -58,6 +61,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "text.html.basic"
                 }
             ]
@@ -87,6 +93,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.ini"
                 }
@@ -118,6 +127,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.java"
                 }
             ]
@@ -147,6 +159,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.lua"
                 }
@@ -178,6 +193,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.makefile"
                 }
             ]
@@ -207,6 +225,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.perl"
                 }
@@ -238,6 +259,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.r"
                 }
             ]
@@ -268,6 +292,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.ruby"
                 }
             ]
@@ -297,6 +324,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "text.html.basic"
                 },
@@ -331,6 +361,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.sql"
                 }
             ]
@@ -360,6 +393,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.asp.vb.net"
                 }
@@ -391,6 +427,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "text.xml"
                 }
             ]
@@ -420,6 +459,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "text.xml.xsl"
                 }
@@ -451,6 +493,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.yaml"
                 }
             ]
@@ -480,6 +525,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.dosbatch"
                 }
@@ -511,6 +559,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.clojure"
                 }
             ]
@@ -540,6 +591,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.coffee"
                 }
@@ -571,6 +625,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.c"
                 }
             ]
@@ -600,6 +657,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.cpp"
                 }
@@ -631,6 +691,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.diff"
                 }
             ]
@@ -660,6 +723,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.dockerfile"
                 }
@@ -691,6 +757,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "text.git-commit"
                 }
             ]
@@ -720,6 +789,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "text.git-rebase"
                 }
@@ -751,6 +823,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.go"
                 }
             ]
@@ -780,6 +855,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.groovy"
                 }
@@ -811,6 +889,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "text.jade"
                 }
             ]
@@ -840,6 +921,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.js"
                 }
@@ -871,6 +955,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.js.regexp"
                 }
             ]
@@ -900,6 +987,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.json"
                 }
@@ -931,6 +1021,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.css.less"
                 }
             ]
@@ -960,6 +1053,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.objc"
                 }
@@ -991,6 +1087,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.css.scss"
                 }
             ]
@@ -1020,6 +1119,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.perl.6"
                 }
@@ -1051,6 +1153,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.powershell"
                 }
             ]
@@ -1080,6 +1185,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.python"
                 }
@@ -1111,6 +1219,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.regexp.python"
                 }
             ]
@@ -1140,6 +1251,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.rust"
                 }
@@ -1171,6 +1285,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.scala"
                 }
             ]
@@ -1200,6 +1317,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.shell"
                 }
@@ -1231,6 +1351,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.ts"
                 }
             ]
@@ -1260,6 +1383,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.tsx"
                 }
@@ -1291,6 +1417,9 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.cs"
                 }
             ]
@@ -1320,6 +1449,9 @@
                 }
             },
             "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
                 {
                     "include": "source.fsharp"
                 }
@@ -1351,7 +1483,43 @@
             },
             "patterns": [
                 {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
                     "include": "source.dart"
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.commentTaggedTemplate.glsl",
+            "contentName": "meta.embedded.block.glsl",
+            "begin": "(?x)(/\\*\\s*(?:glsl)\\s*\\*/)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "comment.block.ts"
+                },
+                "2": {
+                    "name": "string.js"
+                },
+                "3": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "(`)",
+            "endCaptures": {
+                "0": {
+                    "name": "string.js"
+                },
+                "1": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.ts#template-substitution-element"
+                },
+                {
+                    "include": "source.glsl"
                 }
             ]
         }

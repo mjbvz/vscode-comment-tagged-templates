@@ -4,6 +4,15 @@ const fs = require('fs');
 const path = require('path');
 const { languages } = require('./languages');
 
+const targetScopes = ['source.js', 'source.jsx', 'source.js.jsx', 'source.ts', 'source.tsx']
+
+const grammarTemplate = {
+    "fileTypes": [],
+    "injectionSelector": targetScopes.map(scope=> `L:${scope} -comment -(string - meta.embedded)`).join(', '),
+    "patterns": [ ],
+    "scopeName": "inline.template-tagged-langauges"
+};
+
 const getPattern = (language) => {
     const sources = Array.isArray(language.source) ? language.source : [language.source];
     return {
@@ -30,9 +39,13 @@ const getPattern = (language) => {
                 'name': 'punctuation.definition.string.template.end.js'
             }
         },
-        'patterns': sources.map(source => ({
+        'patterns': [
+            {
+                "include": "source.ts#template-substitution-element"
+            }
+        ].concat(sources.map(source => ({
             'include': source
-        }))
+        })))
     };
 };
 
@@ -45,8 +58,7 @@ function escapeRegExp(text) {
 }
 
 const buildGrammar = () => {
-    let text = fs.readFileSync(path.join(__dirname, 'grammar.base.json'), 'utf8');
-    const json = JSON.parse(text);
+    const json = grammarTemplate;
     json.patterns = getPatterns();
     const out = JSON.stringify(json, null, 4);
     fs.writeFileSync(path.join(__dirname, '..', 'syntaxes', 'grammar.json'), out);
