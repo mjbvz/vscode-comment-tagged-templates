@@ -1,0 +1,96 @@
+{
+    "name": "comment-tagged-templates",
+    "displayName": "Comment tagged templates",
+    "description": "Syntax highlighting for tagged template strings using comments to specify language",
+    "version": "0.0.1",
+    "publisher": "bierner",
+    "galleryBanner": {
+        "color": "#ffffff",
+        "theme": "light"
+    },
+    "repository": {
+        "url": "https://github.com/mjbvz/vscode-comment-tagged-templates.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mjbvz/vscode-comment-tagged-templates/issues"
+    },
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "javascript",
+        "typescript",
+        "tagged",
+        "template",
+        "embedded"
+    ],
+    "contributes": {
+        "grammars": [
+            {
+                "injectTo": [
+                    "source.js",
+                    "source.js.jsx",
+                    "source.jsx",
+                    "source.ts",
+                    "source.tsx",
+                    "text.html.basic"
+                ],
+                "scopeName": "inline.template-tagged-langauges",
+                "path": "./syntaxes/grammar.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.css": "css",
+                    "meta.embedded.block.basic": "html",
+                    "meta.embedded.block.ini": "ini",
+                    "meta.embedded.block.java": "java",
+                    "meta.embedded.block.lua": "lua",
+                    "meta.embedded.block.makefile": "makefile",
+                    "meta.embedded.block.perl": "perl",
+                    "meta.embedded.block.r": "r",
+                    "meta.embedded.block.ruby": "ruby",
+                    "meta.embedded.block.php": "php",
+                    "meta.embedded.block.sql": "sql",
+                    "meta.embedded.block.vs_net": "vs_net",
+                    "meta.embedded.block.xml": "xml",
+                    "meta.embedded.block.xsl": "xsl",
+                    "meta.embedded.block.yaml": "yaml",
+                    "meta.embedded.block.dosbatch": "dosbatch",
+                    "meta.embedded.block.clojure": "clojure",
+                    "meta.embedded.block.coffee": "coffee",
+                    "meta.embedded.block.c": "c",
+                    "meta.embedded.block.cpp": "cpp",
+                    "meta.embedded.block.diff": "diff",
+                    "meta.embedded.block.dockerfile": "dockerfile",
+                    "meta.embedded.block.go": "go",
+                    "meta.embedded.block.groovy": "groovy",
+                    "meta.embedded.block.jade": "jade",
+                    "meta.embedded.block.js": "javascript",
+                    "meta.embedded.block.json": "json",
+                    "meta.embedded.block.less": "less",
+                    "meta.embedded.block.objc": "objc",
+                    "meta.embedded.block.scss": "scss",
+                    "meta.embedded.block.perl6": "perl6",
+                    "meta.embedded.block.powershell": "powershell",
+                    "meta.embedded.block.python": "python",
+                    "meta.embedded.block.rust": "rust",
+                    "meta.embedded.block.scala": "scala",
+                    "meta.embedded.block.shell": "shellscript",
+                    "meta.embedded.block.ts": "typescript",
+                    "meta.embedded.block.tsx": "typescriptreact",
+                    "meta.embedded.block.csharp": "csharp",
+                    "meta.embedded.block.fsharp": "fsharp",
+                    "meta.embedded.block.dart": "dart"
+                }
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/node": "^10.5.1"
+    },
+    "scripts": {
+        "build": "node ./build/build",
+        "getEmbedded": "node ./build/getEmbedded"
+    }
+}

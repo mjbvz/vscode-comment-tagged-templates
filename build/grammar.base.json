@@ -1,0 +1,7 @@
+{
+	"fileTypes": [],
+	"injectionSelector": "L:source.js -comment -(string - meta.embedded), L:source.jsx -comment -(string - meta.embedded),  L:source.js.jsx -comment -(string - meta.embedded), L:source.ts -comment -(string - meta.embedded), L:source.tsx -comment -(string - meta.embedded)",
+	"patterns": [
+	],
+	"scopeName": "inline.template-tagged-langauges"
+}
