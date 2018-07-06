@@ -6,14 +6,25 @@ const { languages } = require('./languages');
 
 const targetScopes = ['source.js', 'source.jsx', 'source.js.jsx', 'source.ts', 'source.tsx']
 
-const grammarTemplate = {
+const basicGrammarTemplate = {
     "fileTypes": [],
-    "injectionSelector": targetScopes.map(scope=> `L:${scope} -comment -(string - meta.embedded)`).join(', '),
-    "patterns": [ ],
+    "injectionSelector": getBasicGrammarInjectionSelector(),
+    "patterns": [],
     "scopeName": "inline.template-tagged-langauges"
 };
 
-const getPattern = (language) => {
+const reinjectGrammarTemplate = {
+    "fileTypes": [],
+    "injectionSelector": getReinjectGrammarInjectionSelector(),
+    "patterns": [
+        {
+            "include": "source.ts#template-substitution-element"
+        }
+    ],
+    "scopeName": "inline.template-tagged-langauges.reinjection"
+};
+
+const getBasicGrammarPattern = (language) => {
     const sources = Array.isArray(language.source) ? language.source : [language.source];
     return {
         'name': `string.js.taggedTemplate.commentTaggedTemplate.${language.name}`,
@@ -39,29 +50,46 @@ const getPattern = (language) => {
                 'name': 'punctuation.definition.string.template.end.js'
             }
         },
-        'patterns': [
-            {
-                "include": "source.ts#template-substitution-element"
-            }
-        ].concat(sources.map(source => ({
+        'patterns': sources.map(source => ({
             'include': source
-        })))
+        }))
     };
 };
 
-const getPatterns = () => {
-    return languages.map(getPattern);
-};
+const getBasicGrammarPatterns = () =>
+    languages.map(getBasicGrammarPattern);
+
+function getBasicGrammarInjectionSelector() {
+    return targetScopes
+        .map(scope => `L:${scope} -comment -(string - meta.embedded)`)
+        .join(', ');
+}
+
+function getReinjectGrammarInjectionSelector() {
+    return targetScopes
+        .map(scope => {
+            const embeddedScopeSelectors = languages.map(language => `meta.embedded.block.${language.name}`);
+            return `L:${scope} (${embeddedScopeSelectors.join(', ')})`
+        })
+        .join(', ');
+}
 
 function escapeRegExp(text) {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
 }
 
-const buildGrammar = () => {
-    const json = grammarTemplate;
-    json.patterns = getPatterns();
-    const out = JSON.stringify(json, null, 4);
-    fs.writeFileSync(path.join(__dirname, '..', 'syntaxes', 'grammar.json'), out);
+const buildGrammars = (outDir) => {
+    const basicGrammar = basicGrammarTemplate;
+    basicGrammar.patterns = getBasicGrammarPatterns();
+    writeJson(path.join(outDir, 'grammar.json'), basicGrammar);
+
+    writeJson(
+        path.join(outDir, 'reinject-grammar.json'),
+        reinjectGrammarTemplate);
 };
 
-buildGrammar();
+function writeJson(outFile, json) {
+    fs.writeFileSync(outFile, JSON.stringify(json, null, 4));
+}
+
+buildGrammars(path.join(__dirname, '..', 'syntaxes'));

@@ -83,6 +83,21 @@
                     "meta.embedded.block.fsharp": "fsharp",
                     "meta.embedded.block.dart": "dart"
                 }
+            },
+            {
+                "injectTo": [
+                    "source.js",
+                    "source.js.jsx",
+                    "source.jsx",
+                    "source.ts",
+                    "source.tsx",
+                    "text.html.basic"
+                ],
+                "scopeName": "inline.template-tagged-langauges.reinjection",
+                "path": "./syntaxes/reinject-grammar.json",
+                "embeddedLanguages": {
+                    "meta.template.expression.ts": "typescript"
+                }
             }
         ]
     },
