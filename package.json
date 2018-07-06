@@ -81,7 +81,8 @@
                     "meta.embedded.block.tsx": "typescriptreact",
                     "meta.embedded.block.csharp": "csharp",
                     "meta.embedded.block.fsharp": "fsharp",
-                    "meta.embedded.block.dart": "dart"
+                    "meta.embedded.block.dart": "dart",
+                    "meta.embedded.block.glsl": "glsl"
                 }
             },
             {

@@ -22,8 +22,9 @@ const htmlString = /* html */`
 ## Usage
 The language identifier comment must appear before the opening backtick for the template string. Here is basic list of valid identifiers (note that some languages require that you install an VS Code extension that provides a grammar for that language):
 
-| Language        | Supported Identifiers|
-| ------------- | -----|
+<!--BEGIN_LANG_TABLE-->
+| Language      | Supported Identifiers|
+| ------------- | ---------------------|
 | css | css, css.erb |
 | basic | html, htm, shtml, xhtml, inc, tmpl, tpl |
 | ini | ini, conf |
@@ -70,7 +71,7 @@ The language identifier comment must appear before the opening backtick for the 
 | fsharp | fs, fsharp, f# |
 | dart | dart |
 | glsl | glsl |
-
+<!--END_LANG_TABLE-->
 
 ## Advanced language support
 For IntelliSense and more advanced embedded language support, checkout these extensions:
