@@ -20,7 +20,7 @@ const htmlString = /* html */`
 
 
 ## Usage
-The language identifier comment must appear before the opening backtick for the template string. Here is basic list of valid identifiers:
+The language identifier comment must appear before the opening backtick for the template string. Here is basic list of valid identifiers (note that some languages require that you install an VS Code extension that provides a grammar for that language):
 
 | Language        | Supported Identifiers|
 | ------------- | -----|
