@@ -98,7 +98,7 @@
                     "include": "#commentTaggedTemplate-groovy"
                 },
                 {
-                    "include": "#commentTaggedTemplate-jade"
+                    "include": "#commentTaggedTemplate-pug"
                 },
                 {
                     "include": "#commentTaggedTemplate-js"
@@ -867,9 +867,9 @@
                 }
             ]
         },
-        "commentTaggedTemplate-jade": {
-            "name": "string.js.taggedTemplate.commentTaggedTemplate.jade",
-            "contentName": "meta.embedded.block.jade",
+        "commentTaggedTemplate-pug": {
+            "name": "string.js.taggedTemplate.commentTaggedTemplate.pug",
+            "contentName": "meta.embedded.block.pug",
             "begin": "(?i)(\\*\\s*(?:jade|pug)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
@@ -890,7 +890,7 @@
             },
             "patterns": [
                 {
-                    "include": "text.jade"
+                    "include": "text.pug"
                 }
             ]
         },

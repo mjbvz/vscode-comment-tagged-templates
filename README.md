@@ -51,7 +51,7 @@ The language identifier comment must appear before the opening backtick for the 
 | git_rebase | git-rebase-todo |
 | go | go, golang |
 | groovy | groovy, gvy |
-| jade | jade, pug |
+| pug | jade, pug |
 | js | js, jsx, javascript, es6, mjs |
 | js_regexp | regexp |
 | json | json, sublime-settings, sublime-menu, sublime-keymap, sublime-mousemap, sublime-theme, sublime-build, sublime-project, sublime-completions |

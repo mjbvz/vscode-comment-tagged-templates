@@ -39,7 +39,7 @@ const languages = [
     { name: 'git_rebase', identifiers: ['git-rebase-todo'], source: 'text.git-rebase' },
     { name: 'go', language: 'go', identifiers: ['go', 'golang'], source: 'source.go' },
     { name: 'groovy', language: 'groovy', identifiers: ['groovy', 'gvy'], source: 'source.groovy' },
-    { name: 'jade', language: 'jade', identifiers: ['jade', 'pug'], source: 'text.jade' },
+    { name: 'pug', language: 'pug', identifiers: ['jade', 'pug'], source: 'text.pug' },
     { name: 'js', language: 'javascript', identifiers: ['js', 'jsx', 'javascript', 'es6', 'mjs'], source: 'source.js' },
     { name: 'js_regexp', identifiers: ['regexp'], source: 'source.js.regexp' },
     { name: 'json', language: 'json', identifiers: ['json', 'sublime-settings', 'sublime-menu', 'sublime-keymap', 'sublime-mousemap', 'sublime-theme', 'sublime-build', 'sublime-project', 'sublime-completions'], source: 'source.json' },
