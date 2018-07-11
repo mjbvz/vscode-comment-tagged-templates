@@ -48,8 +48,8 @@ const getBasicGrammarPattern = (language) => {
 const getBasicGrammar = () => {
     const basicGrammar = basicGrammarTemplate;
 
-    basicGrammar.repository = languages.reduce((repository, langauge) => {
-        repository['commentTaggedTemplate-' + langauge.name] = getBasicGrammarPattern(langauge);
+    basicGrammar.repository = languages.reduce((repository, language) => {
+        repository[getRepositoryName(language)] = getBasicGrammarPattern(language);
         return repository;
     }, {});
 
@@ -66,12 +66,16 @@ const getBasicGrammar = () => {
                 0: { name: 'string.js' },
                 1: { name: 'punctuation.definition.string.template.end.js' }
             },
-            patterns: languages.map(x => ({ include: `#commentTaggedTemplate-${x.name}` }))
+            patterns: languages.map(language => ({ include: '#' + getRepositoryName(language) }))
         }
     ]
 
     return basicGrammar;
 };
+
+function getRepositoryName(langauge) {
+    return 'commentTaggedTemplate-' + langauge.name;
+}
 
 function getBasicGrammarInjectionSelector() {
     return targetScopes
