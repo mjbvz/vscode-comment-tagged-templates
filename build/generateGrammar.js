@@ -56,7 +56,7 @@ const getBasicGrammar = () => {
     const allLanguageIdentifiers = [].concat(...languages.map(x => x.identifiers));
     basicGrammar.patterns = [
         {
-            // Match entire language comment indentifier but only consume '/' 
+            // Match entire language comment identifier but only consume '/'
             begin: `(?i)(/)(?=(\\*\\s*(?:${allLanguageIdentifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*\`)`,
             beginCaptures: {
                 1: { name: 'comment.block.ts' }
