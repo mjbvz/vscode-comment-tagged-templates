@@ -44,7 +44,7 @@ The language identifier comment must appear before the opening backtick for the 
 | clojure | clj, cljs, clojure |
 | coffee | coffee, Cakefile, coffee.erb |
 | c | c, h |
-| cpp | cpp, c\+\+, cxx |
+| cpp | cpp, c++, cxx |
 | diff | patch, diff, rej |
 | dockerfile | dockerfile, Dockerfile |
 | git_commit | COMMIT_EDITMSG, MERGE_MSG |
