@@ -29,7 +29,7 @@ const getBasicGrammarPattern = (language) => {
     return {
         'name': `string.js.taggedTemplate.commentTaggedTemplate.${language.name}`,
         'contentName': `meta.embedded.block.${language.name}`,
-        'begin': `(?x)(/\\*\\s*(?:${language.identifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*(\`)`,
+        'begin': `(?x)(\\*\\s*(?:${language.identifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*(\`)`,
         'beginCaptures': {
             '1': {
                 'name': 'comment.block.ts'
@@ -53,8 +53,41 @@ const getBasicGrammarPattern = (language) => {
     };
 };
 
-const getBasicGrammarPatterns = () =>
-    languages.map(getBasicGrammarPattern);
+const getBasicGrammar = () => {
+    const basicGrammar = basicGrammarTemplate;
+
+    basicGrammar.repository = languages.reduce((repository, langauge) => {
+        repository['commentTaggedTemplate-' + langauge.name] = getBasicGrammarPattern(langauge);
+        return repository;
+    }, {});
+
+    const allLanguageIdentifiers = [].concat(...languages.map(x => x.identifiers));
+    basicGrammar.patterns = [
+        {
+            // Match entire language comment indentifier but only consume '/' 
+            'begin': `(?x)(/)(?=(\\*\\s*(?:${allLanguageIdentifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*\`)`,
+            'beginCaptures': {
+                '1': {
+                    'name': 'comment.block.ts'
+                },
+            },
+            'end': '(`)',
+            'endCaptures': {
+                '0': {
+                    'name': 'string.js'
+                },
+                '1': {
+                    'name': 'punctuation.definition.string.template.end.js'
+                }
+            },
+            patterns: languages.map(x => ({
+                include: `#commentTaggedTemplate-${x.name}`
+            }))
+        }
+    ]
+
+    return basicGrammar;
+};
 
 function getBasicGrammarInjectionSelector() {
     return targetScopes
@@ -81,9 +114,7 @@ function writeJson(outFile, json) {
 
 exports.updateGrammars = () => {
     const outDir = path.join(__dirname, '..', 'syntaxes');
-    const basicGrammar = basicGrammarTemplate;
-    basicGrammar.patterns = getBasicGrammarPatterns();
-    writeJson(path.join(outDir, 'grammar.json'), basicGrammar);
+    writeJson(path.join(outDir, 'grammar.json'), getBasicGrammar());
 
     writeJson(
         path.join(outDir, 'reinject-grammar.json'),
