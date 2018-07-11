@@ -174,15 +174,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.css"
@@ -201,15 +193,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "text.html.basic"
@@ -228,15 +212,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.ini"
@@ -255,15 +231,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.java"
@@ -282,15 +250,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.lua"
@@ -309,15 +269,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.makefile"
@@ -336,15 +288,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.perl"
@@ -363,15 +307,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.r"
@@ -390,15 +326,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.ruby"
@@ -417,15 +345,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "text.html.basic"
@@ -447,15 +367,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.sql"
@@ -474,15 +386,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.asp.vb.net"
@@ -501,15 +405,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "text.xml"
@@ -528,15 +424,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "text.xml.xsl"
@@ -555,15 +443,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.yaml"
@@ -582,15 +462,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.dosbatch"
@@ -609,15 +481,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.clojure"
@@ -636,15 +500,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.coffee"
@@ -663,15 +519,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.c"
@@ -690,15 +538,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.cpp"
@@ -717,15 +557,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.diff"
@@ -744,15 +576,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.dockerfile"
@@ -771,15 +595,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "text.git-commit"
@@ -798,15 +614,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "text.git-rebase"
@@ -825,15 +633,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.go"
@@ -852,15 +652,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.groovy"
@@ -879,15 +671,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "text.pug"
@@ -906,15 +690,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.js"
@@ -933,15 +709,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.js.regexp"
@@ -960,15 +728,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.json"
@@ -987,15 +747,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.css.less"
@@ -1014,15 +766,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.objc"
@@ -1041,15 +785,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.css.scss"
@@ -1068,15 +804,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.perl.6"
@@ -1095,15 +823,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.powershell"
@@ -1122,15 +842,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.python"
@@ -1149,15 +861,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.regexp.python"
@@ -1176,15 +880,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.rust"
@@ -1203,15 +899,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.scala"
@@ -1230,15 +918,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.shell"
@@ -1257,15 +937,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.ts"
@@ -1284,15 +956,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.tsx"
@@ -1311,15 +975,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.cs"
@@ -1338,15 +994,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.fsharp"
@@ -1365,15 +1013,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.dart"
@@ -1392,15 +1032,7 @@
                     "name": "punctuation.definition.string.template.begin.js"
                 }
             },
-            "end": "(`)",
-            "endCaptures": {
-                "0": {
-                    "name": "string.js"
-                },
-                "1": {
-                    "name": "punctuation.definition.string.template.end.js"
-                }
-            },
+            "end": "(?=`)",
             "patterns": [
                 {
                     "include": "source.glsl"

@@ -29,18 +29,12 @@ const getBasicGrammarPattern = (language) => {
     return {
         name: `string.js.taggedTemplate.commentTaggedTemplate.${language.name}`,
         contentName: `meta.embedded.block.${language.name}`,
-
-        // The leading '/' was consumed by outer rule
         begin: `(?i)(\\*\\s*(?:${language.identifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*(\`)`,
         beginCaptures: {
             1: { name: 'comment.block.ts' },
             2: { name: 'punctuation.definition.string.template.begin.js' }
         },
-        end: '(`)',
-        endCaptures: {
-            0: { name: 'string.js' },
-            1: { name: 'punctuation.definition.string.template.end.js' }
-        },
+        end: '(?=`)',
         patterns: sources.map(source => ({ 'include': source }))
     };
 };
