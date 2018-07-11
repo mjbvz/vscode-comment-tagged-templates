@@ -35,9 +35,6 @@ const getBasicGrammarPattern = (language) => {
                 'name': 'comment.block.ts'
             },
             '2': {
-                'name': 'string.js'
-            },
-            '3': {
                 'name': 'punctuation.definition.string.template.begin.js'
             }
         },
