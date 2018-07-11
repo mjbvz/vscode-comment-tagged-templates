@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.1.1 - July 11, 2018
+- Fix leak of matching.
+
 ## 0.1.0 - July 11, 2018
 - More efficent matching rules.
 - Case insensitive language name matching.
