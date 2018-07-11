@@ -27,30 +27,21 @@ const reinjectGrammarTemplate = {
 const getBasicGrammarPattern = (language) => {
     const sources = Array.isArray(language.source) ? language.source : [language.source];
     return {
-        'name': `string.js.taggedTemplate.commentTaggedTemplate.${language.name}`,
-        'contentName': `meta.embedded.block.${language.name}`,
+        name: `string.js.taggedTemplate.commentTaggedTemplate.${language.name}`,
+        contentName: `meta.embedded.block.${language.name}`,
+
         // The leading '/' was consumed by outer rule
-        'begin': `(?i)(\\*\\s*(?:${language.identifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*(\`)`,
-        'beginCaptures': {
-            '1': {
-                'name': 'comment.block.ts'
-            },
-            '2': {
-                'name': 'punctuation.definition.string.template.begin.js'
-            }
+        begin: `(?i)(\\*\\s*(?:${language.identifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*(\`)`,
+        beginCaptures: {
+            1: { name: 'comment.block.ts' },
+            2: { name: 'punctuation.definition.string.template.begin.js' }
         },
-        'end': '(`)',
-        'endCaptures': {
-            '0': {
-                'name': 'string.js'
-            },
-            '1': {
-                'name': 'punctuation.definition.string.template.end.js'
-            }
+        end: '(`)',
+        endCaptures: {
+            0: { name: 'string.js' },
+            1: { name: 'punctuation.definition.string.template.end.js' }
         },
-        'patterns': sources.map(source => ({
-            'include': source
-        }))
+        patterns: sources.map(source => ({ 'include': source }))
     };
 };
 
@@ -66,24 +57,16 @@ const getBasicGrammar = () => {
     basicGrammar.patterns = [
         {
             // Match entire language comment indentifier but only consume '/' 
-            'begin': `(?i)(/)(?=(\\*\\s*(?:${allLanguageIdentifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*\`)`,
-            'beginCaptures': {
-                '1': {
-                    'name': 'comment.block.ts'
-                },
+            begin: `(?i)(/)(?=(\\*\\s*(?:${allLanguageIdentifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*\`)`,
+            beginCaptures: {
+                1: { name: 'comment.block.ts' }
             },
-            'end': '(`)',
-            'endCaptures': {
-                '0': {
-                    'name': 'string.js'
-                },
-                '1': {
-                    'name': 'punctuation.definition.string.template.end.js'
-                }
+            end: '(`)',
+            endCaptures: {
+                0: { name: 'string.js' },
+                1: { name: 'punctuation.definition.string.template.end.js' }
             },
-            patterns: languages.map(x => ({
-                include: `#commentTaggedTemplate-${x.name}`
-            }))
+            patterns: languages.map(x => ({ include: `#commentTaggedTemplate-${x.name}` }))
         }
     ]
 
