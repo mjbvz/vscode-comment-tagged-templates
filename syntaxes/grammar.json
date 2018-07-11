@@ -3,7 +3,7 @@
     "injectionSelector": "L:source.js -comment -(string - meta.embedded), L:source.jsx -comment -(string - meta.embedded), L:source.js.jsx -comment -(string - meta.embedded), L:source.ts -comment -(string - meta.embedded), L:source.tsx -comment -(string - meta.embedded)",
     "patterns": [
         {
-            "begin": "(?x)(/)(?=(\\*\\s*(?:css|css\\.erb|html|htm|shtml|xhtml|inc|tmpl|tpl|ini|conf|java|bsh|lua|Makefile|makefile|GNUmakefile|OCamlMakefile|perl|pl|pm|pod|t|PL|psgi|vcl|R|r|s|S|Rprofile|ruby|rb|rbx|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile\\.lock|Thorfile|Puppetfile|php|php3|php4|php5|phpt|phtml|aw|ctp|sql|ddl|dml|vb|xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml|xsl|xslt|yaml|yml|bat|batch|clj|cljs|clojure|coffee|Cakefile|coffee\\.erb|c|h|cpp|c\\+\\+|cxx|patch|diff|rej|dockerfile|Dockerfile|COMMIT_EDITMSG|MERGE_MSG|git\\-rebase\\-todo|go|golang|groovy|gvy|jade|pug|js|jsx|javascript|es6|mjs|regexp|json|sublime\\-settings|sublime\\-menu|sublime\\-keymap|sublime\\-mousemap|sublime\\-theme|sublime\\-build|sublime\\-project|sublime\\-completions|less|objectivec|objective\\-c|mm|objc|obj\\-c|m|h|scss|perl6|p6|pl6|pm6|nqp|powershell|ps1|psm1|psd1|python|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi|re|rust|rs|scala|sbt|shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|\\.textmate_init|typescript|ts|tsx|cs|csharp|c\\#|fs|fsharp|f\\#|dart|glsl)\\s*\\*/)\\s*`)",
+            "begin": "(?i)(/)(?=(\\*\\s*(?:css|css\\.erb|html|htm|shtml|xhtml|inc|tmpl|tpl|ini|conf|java|bsh|lua|Makefile|makefile|GNUmakefile|OCamlMakefile|perl|pl|pm|pod|t|PL|psgi|vcl|R|r|s|S|Rprofile|ruby|rb|rbx|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile\\.lock|Thorfile|Puppetfile|php|php3|php4|php5|phpt|phtml|aw|ctp|sql|ddl|dml|vb|xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml|xsl|xslt|yaml|yml|bat|batch|clj|cljs|clojure|coffee|Cakefile|coffee\\.erb|c|h|cpp|c\\+\\+|cxx|patch|diff|rej|dockerfile|Dockerfile|COMMIT_EDITMSG|MERGE_MSG|git\\-rebase\\-todo|go|golang|groovy|gvy|jade|pug|js|jsx|javascript|es6|mjs|regexp|json|sublime\\-settings|sublime\\-menu|sublime\\-keymap|sublime\\-mousemap|sublime\\-theme|sublime\\-build|sublime\\-project|sublime\\-completions|less|objectivec|objective\\-c|mm|objc|obj\\-c|m|h|scss|perl6|p6|pl6|pm6|nqp|powershell|ps1|psm1|psd1|python|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi|re|rust|rs|scala|sbt|shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|\\.textmate_init|typescript|ts|tsx|cs|csharp|c\\#|fs|fsharp|f\\#|dart|glsl)\\s*\\*/)\\s*`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -165,7 +165,7 @@
         "commentTaggedTemplate-css": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.css",
             "contentName": "meta.embedded.block.css",
-            "begin": "(?x)(\\*\\s*(?:css|css\\.erb)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:css|css\\.erb)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -192,7 +192,7 @@
         "commentTaggedTemplate-basic": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.basic",
             "contentName": "meta.embedded.block.basic",
-            "begin": "(?x)(\\*\\s*(?:html|htm|shtml|xhtml|inc|tmpl|tpl)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:html|htm|shtml|xhtml|inc|tmpl|tpl)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -219,7 +219,7 @@
         "commentTaggedTemplate-ini": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.ini",
             "contentName": "meta.embedded.block.ini",
-            "begin": "(?x)(\\*\\s*(?:ini|conf)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:ini|conf)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -246,7 +246,7 @@
         "commentTaggedTemplate-java": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.java",
             "contentName": "meta.embedded.block.java",
-            "begin": "(?x)(\\*\\s*(?:java|bsh)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:java|bsh)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -273,7 +273,7 @@
         "commentTaggedTemplate-lua": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.lua",
             "contentName": "meta.embedded.block.lua",
-            "begin": "(?x)(\\*\\s*(?:lua)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:lua)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -300,7 +300,7 @@
         "commentTaggedTemplate-makefile": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.makefile",
             "contentName": "meta.embedded.block.makefile",
-            "begin": "(?x)(\\*\\s*(?:Makefile|makefile|GNUmakefile|OCamlMakefile)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:Makefile|makefile|GNUmakefile|OCamlMakefile)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -327,7 +327,7 @@
         "commentTaggedTemplate-perl": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.perl",
             "contentName": "meta.embedded.block.perl",
-            "begin": "(?x)(\\*\\s*(?:perl|pl|pm|pod|t|PL|psgi|vcl)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:perl|pl|pm|pod|t|PL|psgi|vcl)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -354,7 +354,7 @@
         "commentTaggedTemplate-r": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.r",
             "contentName": "meta.embedded.block.r",
-            "begin": "(?x)(\\*\\s*(?:R|r|s|S|Rprofile)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:R|r|s|S|Rprofile)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -381,7 +381,7 @@
         "commentTaggedTemplate-ruby": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.ruby",
             "contentName": "meta.embedded.block.ruby",
-            "begin": "(?x)(\\*\\s*(?:ruby|rb|rbx|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile\\.lock|Thorfile|Puppetfile)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:ruby|rb|rbx|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile\\.lock|Thorfile|Puppetfile)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -408,7 +408,7 @@
         "commentTaggedTemplate-php": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.php",
             "contentName": "meta.embedded.block.php",
-            "begin": "(?x)(\\*\\s*(?:php|php3|php4|php5|phpt|phtml|aw|ctp)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:php|php3|php4|php5|phpt|phtml|aw|ctp)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -438,7 +438,7 @@
         "commentTaggedTemplate-sql": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.sql",
             "contentName": "meta.embedded.block.sql",
-            "begin": "(?x)(\\*\\s*(?:sql|ddl|dml)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:sql|ddl|dml)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -465,7 +465,7 @@
         "commentTaggedTemplate-vs_net": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.vs_net",
             "contentName": "meta.embedded.block.vs_net",
-            "begin": "(?x)(\\*\\s*(?:vb)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:vb)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -492,7 +492,7 @@
         "commentTaggedTemplate-xml": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.xml",
             "contentName": "meta.embedded.block.xml",
-            "begin": "(?x)(\\*\\s*(?:xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -519,7 +519,7 @@
         "commentTaggedTemplate-xsl": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.xsl",
             "contentName": "meta.embedded.block.xsl",
-            "begin": "(?x)(\\*\\s*(?:xsl|xslt)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:xsl|xslt)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -546,7 +546,7 @@
         "commentTaggedTemplate-yaml": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.yaml",
             "contentName": "meta.embedded.block.yaml",
-            "begin": "(?x)(\\*\\s*(?:yaml|yml)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:yaml|yml)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -573,7 +573,7 @@
         "commentTaggedTemplate-dosbatch": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.dosbatch",
             "contentName": "meta.embedded.block.dosbatch",
-            "begin": "(?x)(\\*\\s*(?:bat|batch)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:bat|batch)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -600,7 +600,7 @@
         "commentTaggedTemplate-clojure": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.clojure",
             "contentName": "meta.embedded.block.clojure",
-            "begin": "(?x)(\\*\\s*(?:clj|cljs|clojure)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:clj|cljs|clojure)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -627,7 +627,7 @@
         "commentTaggedTemplate-coffee": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.coffee",
             "contentName": "meta.embedded.block.coffee",
-            "begin": "(?x)(\\*\\s*(?:coffee|Cakefile|coffee\\.erb)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:coffee|Cakefile|coffee\\.erb)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -654,7 +654,7 @@
         "commentTaggedTemplate-c": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.c",
             "contentName": "meta.embedded.block.c",
-            "begin": "(?x)(\\*\\s*(?:c|h)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:c|h)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -681,7 +681,7 @@
         "commentTaggedTemplate-cpp": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.cpp",
             "contentName": "meta.embedded.block.cpp",
-            "begin": "(?x)(\\*\\s*(?:cpp|c\\+\\+|cxx)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:cpp|c\\+\\+|cxx)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -708,7 +708,7 @@
         "commentTaggedTemplate-diff": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.diff",
             "contentName": "meta.embedded.block.diff",
-            "begin": "(?x)(\\*\\s*(?:patch|diff|rej)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:patch|diff|rej)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -735,7 +735,7 @@
         "commentTaggedTemplate-dockerfile": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.dockerfile",
             "contentName": "meta.embedded.block.dockerfile",
-            "begin": "(?x)(\\*\\s*(?:dockerfile|Dockerfile)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:dockerfile|Dockerfile)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -762,7 +762,7 @@
         "commentTaggedTemplate-git_commit": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.git_commit",
             "contentName": "meta.embedded.block.git_commit",
-            "begin": "(?x)(\\*\\s*(?:COMMIT_EDITMSG|MERGE_MSG)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:COMMIT_EDITMSG|MERGE_MSG)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -789,7 +789,7 @@
         "commentTaggedTemplate-git_rebase": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.git_rebase",
             "contentName": "meta.embedded.block.git_rebase",
-            "begin": "(?x)(\\*\\s*(?:git\\-rebase\\-todo)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:git\\-rebase\\-todo)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -816,7 +816,7 @@
         "commentTaggedTemplate-go": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.go",
             "contentName": "meta.embedded.block.go",
-            "begin": "(?x)(\\*\\s*(?:go|golang)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:go|golang)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -843,7 +843,7 @@
         "commentTaggedTemplate-groovy": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.groovy",
             "contentName": "meta.embedded.block.groovy",
-            "begin": "(?x)(\\*\\s*(?:groovy|gvy)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:groovy|gvy)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -870,7 +870,7 @@
         "commentTaggedTemplate-jade": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.jade",
             "contentName": "meta.embedded.block.jade",
-            "begin": "(?x)(\\*\\s*(?:jade|pug)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:jade|pug)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -897,7 +897,7 @@
         "commentTaggedTemplate-js": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.js",
             "contentName": "meta.embedded.block.js",
-            "begin": "(?x)(\\*\\s*(?:js|jsx|javascript|es6|mjs)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:js|jsx|javascript|es6|mjs)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -924,7 +924,7 @@
         "commentTaggedTemplate-js_regexp": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.js_regexp",
             "contentName": "meta.embedded.block.js_regexp",
-            "begin": "(?x)(\\*\\s*(?:regexp)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:regexp)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -951,7 +951,7 @@
         "commentTaggedTemplate-json": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.json",
             "contentName": "meta.embedded.block.json",
-            "begin": "(?x)(\\*\\s*(?:json|sublime\\-settings|sublime\\-menu|sublime\\-keymap|sublime\\-mousemap|sublime\\-theme|sublime\\-build|sublime\\-project|sublime\\-completions)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:json|sublime\\-settings|sublime\\-menu|sublime\\-keymap|sublime\\-mousemap|sublime\\-theme|sublime\\-build|sublime\\-project|sublime\\-completions)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -978,7 +978,7 @@
         "commentTaggedTemplate-less": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.less",
             "contentName": "meta.embedded.block.less",
-            "begin": "(?x)(\\*\\s*(?:less)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:less)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1005,7 +1005,7 @@
         "commentTaggedTemplate-objc": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.objc",
             "contentName": "meta.embedded.block.objc",
-            "begin": "(?x)(\\*\\s*(?:objectivec|objective\\-c|mm|objc|obj\\-c|m|h)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:objectivec|objective\\-c|mm|objc|obj\\-c|m|h)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1032,7 +1032,7 @@
         "commentTaggedTemplate-scss": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.scss",
             "contentName": "meta.embedded.block.scss",
-            "begin": "(?x)(\\*\\s*(?:scss)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:scss)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1059,7 +1059,7 @@
         "commentTaggedTemplate-perl6": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.perl6",
             "contentName": "meta.embedded.block.perl6",
-            "begin": "(?x)(\\*\\s*(?:perl6|p6|pl6|pm6|nqp)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:perl6|p6|pl6|pm6|nqp)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1086,7 +1086,7 @@
         "commentTaggedTemplate-powershell": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.powershell",
             "contentName": "meta.embedded.block.powershell",
-            "begin": "(?x)(\\*\\s*(?:powershell|ps1|psm1|psd1)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:powershell|ps1|psm1|psd1)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1113,7 +1113,7 @@
         "commentTaggedTemplate-python": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.python",
             "contentName": "meta.embedded.block.python",
-            "begin": "(?x)(\\*\\s*(?:python|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:python|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1140,7 +1140,7 @@
         "commentTaggedTemplate-regexp_python": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.regexp_python",
             "contentName": "meta.embedded.block.regexp_python",
-            "begin": "(?x)(\\*\\s*(?:re)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:re)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1167,7 +1167,7 @@
         "commentTaggedTemplate-rust": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.rust",
             "contentName": "meta.embedded.block.rust",
-            "begin": "(?x)(\\*\\s*(?:rust|rs)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:rust|rs)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1194,7 +1194,7 @@
         "commentTaggedTemplate-scala": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.scala",
             "contentName": "meta.embedded.block.scala",
-            "begin": "(?x)(\\*\\s*(?:scala|sbt)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:scala|sbt)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1221,7 +1221,7 @@
         "commentTaggedTemplate-shell": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.shell",
             "contentName": "meta.embedded.block.shell",
-            "begin": "(?x)(\\*\\s*(?:shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|\\.textmate_init)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|\\.textmate_init)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1248,7 +1248,7 @@
         "commentTaggedTemplate-ts": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.ts",
             "contentName": "meta.embedded.block.ts",
-            "begin": "(?x)(\\*\\s*(?:typescript|ts)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:typescript|ts)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1275,7 +1275,7 @@
         "commentTaggedTemplate-tsx": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.tsx",
             "contentName": "meta.embedded.block.tsx",
-            "begin": "(?x)(\\*\\s*(?:tsx)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:tsx)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1302,7 +1302,7 @@
         "commentTaggedTemplate-csharp": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.csharp",
             "contentName": "meta.embedded.block.csharp",
-            "begin": "(?x)(\\*\\s*(?:cs|csharp|c\\#)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:cs|csharp|c\\#)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1329,7 +1329,7 @@
         "commentTaggedTemplate-fsharp": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.fsharp",
             "contentName": "meta.embedded.block.fsharp",
-            "begin": "(?x)(\\*\\s*(?:fs|fsharp|f\\#)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:fs|fsharp|f\\#)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1356,7 +1356,7 @@
         "commentTaggedTemplate-dart": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.dart",
             "contentName": "meta.embedded.block.dart",
-            "begin": "(?x)(\\*\\s*(?:dart)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:dart)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -1383,7 +1383,7 @@
         "commentTaggedTemplate-glsl": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.glsl",
             "contentName": "meta.embedded.block.glsl",
-            "begin": "(?x)(\\*\\s*(?:glsl)\\s*\\*/)\\s*(`)",
+            "begin": "(?i)(\\*\\s*(?:glsl)\\s*\\*/)\\s*(`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"

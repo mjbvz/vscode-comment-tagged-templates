@@ -29,7 +29,8 @@ const getBasicGrammarPattern = (language) => {
     return {
         'name': `string.js.taggedTemplate.commentTaggedTemplate.${language.name}`,
         'contentName': `meta.embedded.block.${language.name}`,
-        'begin': `(?x)(\\*\\s*(?:${language.identifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*(\`)`,
+        // The leading '/' was consumed by outer rule
+        'begin': `(?i)(\\*\\s*(?:${language.identifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*(\`)`,
         'beginCaptures': {
             '1': {
                 'name': 'comment.block.ts'
@@ -65,7 +66,7 @@ const getBasicGrammar = () => {
     basicGrammar.patterns = [
         {
             // Match entire language comment indentifier but only consume '/' 
-            'begin': `(?x)(/)(?=(\\*\\s*(?:${allLanguageIdentifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*\`)`,
+            'begin': `(?i)(/)(?=(\\*\\s*(?:${allLanguageIdentifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*\`)`,
             'beginCaptures': {
                 '1': {
                     'name': 'comment.block.ts'
