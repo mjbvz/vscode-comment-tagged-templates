@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.2.0 - July 12, 2018
+- Added markdown and graphql language support. Thanks @axefrog!
+
 ## 0.1.1 - July 11, 2018
 - Fix leak of matching.
 
