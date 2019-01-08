@@ -50,12 +50,14 @@ The language identifier comment must appear before the opening backtick for the 
 | git_commit | COMMIT_EDITMSG, MERGE_MSG |
 | git_rebase | git-rebase-todo |
 | go | go, golang |
+| graphql | qgl, graphql |
 | groovy | groovy, gvy |
 | pug | jade, pug |
 | js | js, jsx, javascript, es6, mjs |
 | js_regexp | regexp |
 | json | json, sublime-settings, sublime-menu, sublime-keymap, sublime-mousemap, sublime-theme, sublime-build, sublime-project, sublime-completions |
 | less | less |
+| md | md, markdown |
 | objc | objectivec, objective-c, mm, objc, obj-c, m, h |
 | scss | scss |
 | perl6 | perl6, p6, pl6, pm6, nqp |

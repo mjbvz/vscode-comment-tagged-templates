@@ -105,10 +105,12 @@
         ]
     },
     "devDependencies": {
-        "@types/node": "^10.5.1"
+        "@types/node": "^10.5.1",
+        "vscode": "1.1.26"
     },
     "scripts": {
         "build": "node ./build/build",
-        "getEmbedded": "node ./build/getEmbedded"
+        "getEmbedded": "node ./build/getEmbedded",
+        "test": "node ./node_modules/vscode/bin/test ./test"
     }
 }
