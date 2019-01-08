@@ -107,4 +107,8 @@ npm run build
 
 The supported languages are defined in `build/languages.js`
 
+To run the tests:
 
+```bash
+npm run test
+```
