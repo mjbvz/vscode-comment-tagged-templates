@@ -37,7 +37,14 @@ const getBasicGrammarPattern = (language) => {
             2: { name: 'punctuation.definition.string.template.begin.js' }
         },
         end: '(?=`)',
-        patterns: sources.map(source => ({ 'include': source }))
+        patterns: [
+            ...sources.map(source => ({ 'include': source })),
+            // When a language grammar is not installed, insert a phony pattern
+            // so that we still match all the inner text but don't highlight it
+            {
+                match: "."
+            }
+        ]
     };
 };
 
