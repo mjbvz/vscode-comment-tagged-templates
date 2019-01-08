@@ -31,7 +31,7 @@ const getBasicGrammarPattern = (language) => {
         contentName: `meta.embedded.block.${language.name}`,
 
         // The leading '/' was consumed by outer rule
-        begin: `(?i)(\\*\\s*(?:${language.identifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*(\`)`,
+        begin: `(?i)(\\*\\s*\\b(?:${language.identifiers.map(escapeRegExp).join('|')})\\b\\s*\\*/)\\s*(\`)`,
         beginCaptures: {
             1: { name: 'comment.block.ts' },
             2: { name: 'punctuation.definition.string.template.begin.js' }
@@ -53,7 +53,7 @@ const getBasicGrammar = () => {
     basicGrammar.patterns = [
         {
             // Match entire language comment identifier but only consume '/'
-            begin: `(?i)(/)(?=(\\*\\s*(?:${allLanguageIdentifiers.map(escapeRegExp).join('|')})\\s*\\*/)\\s*\`)`,
+            begin: `(?i)(/)(?=(\\*\\s*\\b(?:${allLanguageIdentifiers.map(escapeRegExp).join('|')})\\b\\s*\\*/)\\s*\`)`,
             beginCaptures: {
                 1: { name: 'comment.block.ts' }
             },
