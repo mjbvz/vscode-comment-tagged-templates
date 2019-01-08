@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.2.1 - January 07, 2019
+- Highlight blocks a single color when a matching language grammar cannot be found.
+
 ## 0.2.0 - July 12, 2018
 - Added markdown and graphql language support. Thanks @axefrog!
 
