@@ -1,4 +1,5 @@
 [![](https://vsmarketplacebadge.apphb.com/version/bierner.comment-tagged-templates.svg)](https://marketplace.visualstudio.com/items?itemName=bierner.comment-tagged-templates)
+[![Build Status](https://travis-ci.org/mjbvz/vscode-comment-tagged-templates.svg?branch=master)](https://travis-ci.org/mjbvz/vscode-comment-tagged-templates)
 
 Adds basic syntax highlighting for JavaScript and TypeScript tagged template strings using language identifier comments:
 
