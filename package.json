@@ -106,7 +106,7 @@
     },
     "devDependencies": {
         "@types/node": "^10.5.1",
-        "vscode": "1.1.26"
+        "vscode": "^1.1.36"
     },
     "scripts": {
         "build": "node ./build/build",
