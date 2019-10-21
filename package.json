@@ -36,7 +36,8 @@
                     "source.jsx",
                     "source.ts",
                     "source.tsx",
-                    "text.html.basic"
+                    "text.html.basic",
+                    "text.html.derivative"
                 ],
                 "scopeName": "inline.template-tagged-langauges",
                 "path": "./syntaxes/grammar.json",
@@ -94,7 +95,8 @@
                     "source.jsx",
                     "source.ts",
                     "source.tsx",
-                    "text.html.basic"
+                    "text.html.basic",
+                    "text.html.derivative"
                 ],
                 "scopeName": "inline.template-tagged-langauges.reinjection",
                 "path": "./syntaxes/reinject-grammar.json",
