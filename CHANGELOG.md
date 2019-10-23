@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.3.0 - October 23, 2019
+- Also enable highlighting in html file script blocks. Thanks @janispritzkau!
+
 ## 0.2.1 - January 07, 2019
 - Highlight blocks a single color when a matching language grammar cannot be found.
 
