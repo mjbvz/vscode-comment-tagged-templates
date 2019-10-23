@@ -6,5 +6,5 @@
             "include": "source.ts#template-substitution-element"
         }
     ],
-    "scopeName": "inline.template-tagged-langauges.reinjection"
+    "scopeName": "inline.template-tagged-languages.reinjection"
 }

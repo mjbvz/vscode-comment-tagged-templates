@@ -10,7 +10,7 @@ const basicGrammarTemplate = {
     "fileTypes": [],
     "injectionSelector": getBasicGrammarInjectionSelector(),
     "patterns": [],
-    "scopeName": "inline.template-tagged-langauges"
+    "scopeName": "inline.template-tagged-languages"
 };
 
 const reinjectGrammarTemplate = {
@@ -21,7 +21,7 @@ const reinjectGrammarTemplate = {
             "include": "source.ts#template-substitution-element"
         }
     ],
-    "scopeName": "inline.template-tagged-langauges.reinjection"
+    "scopeName": "inline.template-tagged-languages.reinjection"
 };
 
 const getBasicGrammarPattern = (language) => {

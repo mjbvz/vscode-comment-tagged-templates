@@ -39,7 +39,7 @@
                     "text.html.basic",
                     "text.html.derivative"
                 ],
-                "scopeName": "inline.template-tagged-langauges",
+                "scopeName": "inline.template-tagged-languages",
                 "path": "./syntaxes/grammar.json",
                 "embeddedLanguages": {
                     "meta.embedded.block.css": "css",
@@ -98,7 +98,7 @@
                     "text.html.basic",
                     "text.html.derivative"
                 ],
-                "scopeName": "inline.template-tagged-langauges.reinjection",
+                "scopeName": "inline.template-tagged-languages.reinjection",
                 "path": "./syntaxes/reinject-grammar.json",
                 "embeddedLanguages": {
                     "meta.template.expression.ts": "typescript"

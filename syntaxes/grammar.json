@@ -166,7 +166,7 @@
             ]
         }
     ],
-    "scopeName": "inline.template-tagged-langauges",
+    "scopeName": "inline.template-tagged-languages",
     "repository": {
         "commentTaggedTemplate-css": {
             "name": "string.js.taggedTemplate.commentTaggedTemplate.css",
