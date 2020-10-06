@@ -46,6 +46,7 @@ const languages = [
     { name: 'json', language: 'json', identifiers: ['json', 'sublime-settings', 'sublime-menu', 'sublime-keymap', 'sublime-mousemap', 'sublime-theme', 'sublime-build', 'sublime-project', 'sublime-completions'], source: 'source.json' },
     { name: 'less', language: 'less', identifiers: ['less'], source: 'source.css.less' },
     { name: 'md', language: 'markdown', identifiers: ['md', 'markdown'], source: 'text.html.markdown' },
+    { name: 'mjml', language: 'mjml', identifiers: ['mjml'], source: 'source.mjml' },
     { name: 'objc', language: 'objc', identifiers: ['objectivec', 'objective-c', 'mm', 'objc', 'obj-c', 'm', 'h'], source: 'source.objc' },
     { name: 'scss', language: 'scss', identifiers: ['scss'], source: 'source.css.scss' },
     { name: 'perl6', language: 'perl6', identifiers: ['perl6', 'p6', 'pl6', 'pm6', 'nqp'], source: 'source.perl.6' },
