@@ -37,7 +37,8 @@
                     "source.ts",
                     "source.tsx",
                     "text.html.basic",
-                    "text.html.derivative"
+                    "text.html.derivative",
+                    "text.html.markdown"
                 ],
                 "scopeName": "inline.template-tagged-languages",
                 "path": "./syntaxes/grammar.json",
@@ -96,7 +97,8 @@
                     "source.ts",
                     "source.tsx",
                     "text.html.basic",
-                    "text.html.derivative"
+                    "text.html.derivative",
+                    "text.html.markdown"
                 ],
                 "scopeName": "inline.template-tagged-languages.reinjection",
                 "path": "./syntaxes/reinject-grammar.json",
