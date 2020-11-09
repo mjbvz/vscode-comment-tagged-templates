@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.1 - November 9, 2020
+- Enable highlighting for jsx in markdown. Thanks @homerjam!
+- Enable highlighting for mjml. Thanks @frontendwizard!
+
 ## 0.3.0 - October 23, 2019
 - Also enable highlighting in html file script blocks. Thanks @janispritzkau!
 
