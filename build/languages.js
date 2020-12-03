@@ -58,6 +58,7 @@ const languages = [
     { name: 'shell', language: 'shellscript', identifiers: ['shell', 'sh', 'bash', 'zsh', 'bashrc', 'bash_profile', 'bash_login', 'profile', 'bash_logout', '.textmate_init'], source: 'source.shell' },
     { name: 'ts', language: 'typescript', identifiers: ['typescript', 'ts'], source: 'source.ts' },
     { name: 'tsx', language: 'typescriptreact', identifiers: ['tsx'], source: 'source.tsx' },
+    { name: 'toml', language: 'toml', identifiers: ['toml'], source: 'source.toml' },
     { name: 'csharp', language: 'csharp', identifiers: ['cs', 'csharp', 'c#'], source: 'source.cs' },
     { name: 'fsharp', language: 'fsharp', identifiers: ['fs', 'fsharp', 'f#'], source: 'source.fsharp' },
     { name: 'dart', language: 'dart', identifiers: ['dart'], source: 'source.dart' },
