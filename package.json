@@ -36,6 +36,7 @@
                     "source.jsx",
                     "source.ts",
                     "source.tsx",
+                    "source.vue",
                     "text.html.basic",
                     "text.html.derivative",
                     "text.html.markdown"
@@ -96,6 +97,7 @@
                     "source.jsx",
                     "source.ts",
                     "source.tsx",
+                    "source.vue",
                     "text.html.basic",
                     "text.html.derivative",
                     "text.html.markdown"
