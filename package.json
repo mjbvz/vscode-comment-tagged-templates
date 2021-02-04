@@ -117,10 +117,5 @@
         "build": "node ./build/build",
         "getEmbedded": "node ./build/getEmbedded",
         "test": "node ./node_modules/vscode/bin/test ./test"
-    },
-    "__metadata": {
-        "id": "700f8472-f3c3-4f26-9fef-c6ad8e5fafe8",
-        "publisherId": "f164f116-e2aa-496b-84dc-2451248e8beb",
-        "publisherDisplayName": "Matt Bierner"
     }
 }
