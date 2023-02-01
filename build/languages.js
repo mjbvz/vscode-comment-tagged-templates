@@ -62,5 +62,6 @@ const languages = [
     { name: 'fsharp', language: 'fsharp', identifiers: ['fs', 'fsharp', 'f#'], source: 'source.fsharp' },
     { name: 'dart', language: 'dart', identifiers: ['dart'], source: 'source.dart' },
     { name: 'glsl', language: 'glsl', identifiers: ['glsl'], source: 'source.glsl' },
+    { name: 'liquid', language: 'liquid', identifiers: ['liquid'], source: 'source.liquid' },
 ];
 exports.languages = languages;
