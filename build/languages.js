@@ -63,5 +63,6 @@ const languages = [
     { name: 'dart', language: 'dart', identifiers: ['dart'], source: 'source.dart' },
     { name: 'glsl', language: 'glsl', identifiers: ['glsl'], source: 'source.glsl' },
     { name: 'liquid', language: 'liquid', identifiers: ['liquid'], source: 'source.liquid' },
+    { name: 'sparql', language: 'sparql', identifiers: ['sparql'], source: 'source.sparql' },
 ];
 exports.languages = languages;

@@ -73,6 +73,7 @@
                     "meta.embedded.block.json": "json",
                     "meta.embedded.block.less": "less",
                     "meta.embedded.block.md": "markdown",
+                    "meta.embedded.block.mjml": "mjml",
                     "meta.embedded.block.objc": "objc",
                     "meta.embedded.block.scss": "scss",
                     "meta.embedded.block.perl6": "perl6",
@@ -86,7 +87,9 @@
                     "meta.embedded.block.csharp": "csharp",
                     "meta.embedded.block.fsharp": "fsharp",
                     "meta.embedded.block.dart": "dart",
-                    "meta.embedded.block.glsl": "glsl"
+                    "meta.embedded.block.glsl": "glsl",
+                    "meta.embedded.block.liquid": "liquid",
+                    "meta.embedded.block.sparql": "sparql"
                 }
             },
             {

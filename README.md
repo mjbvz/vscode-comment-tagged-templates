@@ -59,6 +59,7 @@ The language identifier comment must appear before the opening backtick for the 
 | json | json, sublime-settings, sublime-menu, sublime-keymap, sublime-mousemap, sublime-theme, sublime-build, sublime-project, sublime-completions |
 | less | less |
 | md | md, markdown |
+| mjml | mjml |
 | objc | objectivec, objective-c, mm, objc, obj-c, m, h |
 | scss | scss |
 | perl6 | perl6, p6, pl6, pm6, nqp |
@@ -74,6 +75,8 @@ The language identifier comment must appear before the opening backtick for the 
 | fsharp | fs, fsharp, f# |
 | dart | dart |
 | glsl | glsl |
+| liquid | liquid |
+| sparql | sparql |
 <!--END_LANG_TABLE-->
 
 ## Advanced language support
