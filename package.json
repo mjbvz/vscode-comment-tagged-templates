@@ -112,11 +112,12 @@
         ]
     },
     "devDependencies": {
-        "vscode": "^1.1.37"
+        "@vscode/test-electron": "^2.3.0",
+        "mocha": "^10.2.0"
     },
     "scripts": {
         "build": "node ./build/build",
         "getEmbedded": "node ./build/getEmbedded",
-        "test": "node ./node_modules/vscode/bin/test ./test"
+        "test": "node ./test/index.mjs"
     }
 }
