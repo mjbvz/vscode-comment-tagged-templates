@@ -48,7 +48,7 @@ The language identifier comment must appear before the opening backtick for the 
 | git_commit | COMMIT_EDITMSG, MERGE_MSG |
 | git_rebase | git-rebase-todo |
 | go | go, golang |
-| graphql | qgl, graphql |
+| graphql | gql, qgl, graphql |
 | groovy | groovy, gvy |
 | pug | jade, pug |
 | js | js, jsx, javascript, es6, mjs |
