@@ -1,12 +1,12 @@
 /**
  * List of languages
- * 
+ *
  * name: Human readable indentifier for the langauge
- * 
+ *
  * language: vscode language identifier
- * 
+ *
  * identifiers: Strings used in comments to identify language
- * 
+ *
  * source: Name of the toplevel textmate scope for the language
  */
 const languages = [
@@ -38,7 +38,7 @@ const languages = [
     { name: 'git_commit', identifiers: ['COMMIT_EDITMSG', 'MERGE_MSG'], source: 'text.git-commit' },
     { name: 'git_rebase', identifiers: ['git-rebase-todo'], source: 'text.git-rebase' },
     { name: 'go', language: 'go', identifiers: ['go', 'golang'], source: 'source.go' },
-    { name: 'graphql', language: 'graphql', identifiers: ['qgl', 'graphql'], source: 'source.graphql' },
+    { name: 'graphql', language: 'graphql', identifiers: ['gql', 'qgl', 'graphql'], source: 'source.graphql' },
     { name: 'groovy', language: 'groovy', identifiers: ['groovy', 'gvy'], source: 'source.groovy' },
     { name: 'pug', language: 'pug', identifiers: ['jade', 'pug'], source: 'text.pug' },
     { name: 'js', language: 'javascript', identifiers: ['js', 'jsx', 'javascript', 'es6', 'mjs'], source: 'source.js' },
