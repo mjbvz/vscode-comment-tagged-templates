@@ -89,7 +89,8 @@
                     "meta.embedded.block.dart": "dart",
                     "meta.embedded.block.glsl": "glsl",
                     "meta.embedded.block.liquid": "liquid",
-                    "meta.embedded.block.sparql": "sparql"
+                    "meta.embedded.block.sparql": "sparql",
+                    "meta.embedded.block.edgeql": "edgeql"
                 }
             },
             {

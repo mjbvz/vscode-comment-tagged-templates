@@ -3,7 +3,7 @@
     "injectionSelector": "L:source.js -comment -(string - meta.embedded), L:source.jsx -comment -(string - meta.embedded), L:source.js.jsx -comment -(string - meta.embedded), L:source.ts -comment -(string - meta.embedded), L:source.tsx -comment -(string - meta.embedded)",
     "patterns": [
         {
-            "begin": "(?i)(/)(?=(\\*\\s*\\b(?:css|css\\.erb|html|htm|shtml|xhtml|inc|tmpl|tpl|ini|conf|java|bsh|lua|Makefile|makefile|GNUmakefile|OCamlMakefile|perl|pl|pm|pod|t|PL|psgi|vcl|R|r|s|S|Rprofile|ruby|rb|rbx|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile\\.lock|Thorfile|Puppetfile|php|php3|php4|php5|phpt|phtml|aw|ctp|sql|ddl|dml|vb|xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml|xsl|xslt|yaml|yml|bat|batch|clj|cljs|clojure|coffee|Cakefile|coffee\\.erb|c|h|cpp|c\\+\\+|cxx|patch|diff|rej|dockerfile|Dockerfile|COMMIT_EDITMSG|MERGE_MSG|git\\-rebase\\-todo|go|golang|gql|qgl|graphql|groovy|gvy|jade|pug|js|jsx|javascript|es6|mjs|regexp|json|sublime\\-settings|sublime\\-menu|sublime\\-keymap|sublime\\-mousemap|sublime\\-theme|sublime\\-build|sublime\\-project|sublime\\-completions|less|md|markdown|mjml|objectivec|objective\\-c|mm|objc|obj\\-c|m|h|scss|perl6|p6|pl6|pm6|nqp|powershell|ps1|psm1|psd1|python|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi|re|rust|rs|scala|sbt|shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|\\.textmate_init|typescript|ts|tsx|cs|csharp|c\\#|fs|fsharp|f\\#|dart|glsl|liquid|sparql)\\b\\s*\\*/)\\s*`)",
+            "begin": "(?i)(/)(?=(\\*\\s*\\b(?:css|css\\.erb|html|htm|shtml|xhtml|inc|tmpl|tpl|ini|conf|java|bsh|lua|Makefile|makefile|GNUmakefile|OCamlMakefile|perl|pl|pm|pod|t|PL|psgi|vcl|R|r|s|S|Rprofile|ruby|rb|rbx|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile\\.lock|Thorfile|Puppetfile|php|php3|php4|php5|phpt|phtml|aw|ctp|sql|ddl|dml|vb|xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml|xsl|xslt|yaml|yml|bat|batch|clj|cljs|clojure|coffee|Cakefile|coffee\\.erb|c|h|cpp|c\\+\\+|cxx|patch|diff|rej|dockerfile|Dockerfile|COMMIT_EDITMSG|MERGE_MSG|git\\-rebase\\-todo|go|golang|gql|qgl|graphql|groovy|gvy|jade|pug|js|jsx|javascript|es6|mjs|regexp|json|sublime\\-settings|sublime\\-menu|sublime\\-keymap|sublime\\-mousemap|sublime\\-theme|sublime\\-build|sublime\\-project|sublime\\-completions|less|md|markdown|mjml|objectivec|objective\\-c|mm|objc|obj\\-c|m|h|scss|perl6|p6|pl6|pm6|nqp|powershell|ps1|psm1|psd1|python|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi|re|rust|rs|scala|sbt|shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|\\.textmate_init|typescript|ts|tsx|cs|csharp|c\\#|fs|fsharp|f\\#|dart|glsl|liquid|sparql|edgeql)\\b\\s*\\*/)\\s*`)",
             "beginCaptures": {
                 "1": {
                     "name": "comment.block.ts"
@@ -171,6 +171,9 @@
                 },
                 {
                     "include": "#commentTaggedTemplate-sparql"
+                },
+                {
+                    "include": "#commentTaggedTemplate-edgeql"
                 }
             ]
         }
@@ -1296,6 +1299,28 @@
             "patterns": [
                 {
                     "include": "source.sparql"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        "commentTaggedTemplate-edgeql": {
+            "name": "string.js.taggedTemplate.commentTaggedTemplate.edgeql",
+            "contentName": "meta.embedded.block.edgeql",
+            "begin": "(?i)(\\*\\s*\\b(?:edgeql)\\b\\s*\\*/)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "comment.block.ts"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "(?=`)",
+            "patterns": [
+                {
+                    "include": "source.edgeql"
                 },
                 {
                     "match": "."
