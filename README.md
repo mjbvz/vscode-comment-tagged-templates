@@ -74,6 +74,7 @@ The language identifier comment must appear before the opening backtick for the 
 | glsl | glsl |
 | liquid | liquid |
 | sparql | sparql |
+| applescript | applescript |
 <!--END_LANG_TABLE-->
 
 ## Advanced language support
