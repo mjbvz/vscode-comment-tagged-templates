@@ -75,6 +75,7 @@ The language identifier comment must appear before the opening backtick for the 
 | liquid | liquid |
 | sparql | sparql |
 | applescript | applescript |
+| edgeql | edgeql |
 <!--END_LANG_TABLE-->
 
 ## Advanced language support
