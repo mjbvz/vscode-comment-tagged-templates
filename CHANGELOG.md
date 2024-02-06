@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.3.3 - February 5, 2024
+- Add highlighting for cypher. Thanks @fabiankaestner!
+- Add highlighting for edgeql. Thanks @MrFoxPro!
+- Add highlighting for AppleScript. Thanks @flops!
+
 ## 0.3.2 - April 12, 2023
 - Enable highlighting of SPARQL. Thanks @Peeja!
 
