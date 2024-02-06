@@ -66,5 +66,6 @@ const languages = [
     { name: 'sparql', language: 'sparql', identifiers: ['sparql'], source: 'source.sparql' },
     { name: 'applescript', language: 'applescript', identifiers: ['applescript'], source: 'source.applescript' },
     { name: 'edgeql', language: 'edgeql', identifiers: ['edgeql'], source: 'source.edgeql' },
+    { name: 'cypher', language: 'cypher', identifiers: ['cypher', 'cyp', 'cql'], source: 'source.cypher' },
 ];
 exports.languages = languages;
