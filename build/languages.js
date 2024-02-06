@@ -64,6 +64,7 @@ const languages = [
     { name: 'glsl', language: 'glsl', identifiers: ['glsl'], source: 'source.glsl' },
     { name: 'liquid', language: 'liquid', identifiers: ['liquid'], source: 'source.liquid' },
     { name: 'sparql', language: 'sparql', identifiers: ['sparql'], source: 'source.sparql' },
+    { name: 'applescript', language: 'applescript', identifiers: ['applescript'], source: 'source.applescript' },
     { name: 'edgeql', language: 'edgeql', identifiers: ['edgeql'], source: 'source.edgeql' },
 ];
 exports.languages = languages;
