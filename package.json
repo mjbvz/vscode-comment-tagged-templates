@@ -92,7 +92,8 @@
                     "meta.embedded.block.sparql": "sparql",
                     "meta.embedded.block.applescript": "applescript",
                     "meta.embedded.block.edgeql": "edgeql",
-                    "meta.embedded.block.cypher": "cypher"
+                    "meta.embedded.block.cypher": "cypher",
+                    "meta.embedded.block.prql": "prql"
                 }
             },
             {
