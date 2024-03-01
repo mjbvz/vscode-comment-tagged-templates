@@ -77,6 +77,7 @@ The language identifier comment must appear before the opening backtick for the 
 | applescript | applescript |
 | edgeql | edgeql |
 | cypher | cypher, cyp, cql |
+| prql | prql |
 <!--END_LANG_TABLE-->
 
 ## Advanced language support
