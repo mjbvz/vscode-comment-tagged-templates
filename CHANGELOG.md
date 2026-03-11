@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.4.0 - March 11, 2026
+- Added highlighting support for svg and LaTeX.
+- Enabled highlighting in Vue files.
+
 ## 0.3.3 - February 5, 2024
 - Add highlighting for cypher. Thanks @fabiankaestner!
 - Add highlighting for edgeql. Thanks @MrFoxPro!
