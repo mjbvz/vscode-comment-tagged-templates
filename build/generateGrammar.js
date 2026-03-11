@@ -24,7 +24,7 @@ const reinjectGrammarTemplate = {
     "scopeName": "inline.template-tagged-languages.reinjection"
 };
 
-const getBasicGrammarPattern = (language) => {
+const getCommentTaggedGrammarPattern = (language) => {
     const sources = Array.isArray(language.source) ? language.source : [language.source];
     return {
         name: `string.js.taggedTemplate.commentTaggedTemplate.${language.name}`,
@@ -48,11 +48,32 @@ const getBasicGrammarPattern = (language) => {
     };
 };
 
+const getDirectTaggedGrammarPattern = (language) => {
+    const sources = Array.isArray(language.source) ? language.source : [language.source];
+    return {
+        name: `string.js.taggedTemplate.directTaggedTemplate.${language.name}`,
+        contentName: `meta.embedded.block.${language.name}`,
+        begin: `(?i)(\\b(?:${language.identifiers.map(escapeRegExp).join('|')})\\b\)\\s*(\`)`,
+        beginCaptures: {
+            1: { name: 'entity.name.function.tagged-template.js' },
+            2: { name: 'punctuation.definition.string.template.begin.js' }
+        },
+        end: '`',
+        endCaptures: {
+            0: { name: 'punctuation.definition.string.template.end.js' }
+        },
+        patterns: [
+            ...sources.map(source => ({ 'include': source })),
+            { match: "." }
+        ]
+    };
+};
+
 const getBasicGrammar = () => {
     const basicGrammar = basicGrammarTemplate;
 
     basicGrammar.repository = languages.reduce((repository, language) => {
-        repository[getRepositoryName(language)] = getBasicGrammarPattern(language);
+        repository[getCommentTaggedRepositoryName(language)] = getCommentTaggedGrammarPattern(language);
         return repository;
     }, {});
 
@@ -69,15 +90,16 @@ const getBasicGrammar = () => {
                 0: { name: 'string.js' },
                 1: { name: 'punctuation.definition.string.template.end.js' }
             },
-            patterns: languages.map(language => ({ include: '#' + getRepositoryName(language) }))
-        }
-    ]
+            patterns: languages.map(language => ({ include: '#' + getCommentTaggedRepositoryName(language) }))
+        },
+        ...languages.map(getDirectTaggedGrammarPattern)
+    ];
 
     return basicGrammar;
 };
 
-function getRepositoryName(langauge) {
-    return 'commentTaggedTemplate-' + langauge.name;
+function getCommentTaggedRepositoryName(language) {
+    return 'commentTaggedTemplate-' + language.name;
 }
 
 function getBasicGrammarInjectionSelector() {
@@ -111,4 +133,3 @@ exports.updateGrammars = () => {
         path.join(outDir, 'reinject-grammar.json'),
         reinjectGrammarTemplate);
 };
-

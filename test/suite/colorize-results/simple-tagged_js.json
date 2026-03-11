@@ -84,36 +84,22 @@
 		}
 	},
 	{
-		"c": "/",
-		"t": "source.js meta.var.expr.js comment.block.ts",
+		"c": "js",
+		"t": "source.js meta.var.expr.js string.js.taggedTemplate.directTaggedTemplate.js entity.name.function.tagged-template.js",
 		"r": {
-			"dark_plus": "comment: #6A9955",
-			"light_plus": "comment: #008000",
-			"dark_vs": "comment: #6A9955",
-			"light_vs": "comment: #008000",
-			"hc_black": "comment: #7CA668",
-			"dark_modern": "comment: #6A9955",
-			"hc_light": "comment: #515151",
-			"light_modern": "comment: #008000"
-		}
-	},
-	{
-		"c": "* glsl */",
-		"t": "source.js meta.var.expr.js string.js.taggedTemplate.commentTaggedTemplate.glsl comment.block.ts",
-		"r": {
-			"dark_plus": "comment: #6A9955",
-			"light_plus": "comment: #008000",
-			"dark_vs": "comment: #6A9955",
-			"light_vs": "comment: #008000",
-			"hc_black": "comment: #7CA668",
-			"dark_modern": "comment: #6A9955",
-			"hc_light": "comment: #515151",
-			"light_modern": "comment: #008000"
+			"dark_plus": "entity.name.function: #DCDCAA",
+			"light_plus": "entity.name.function: #795E26",
+			"dark_vs": "string: #CE9178",
+			"light_vs": "string: #A31515",
+			"hc_black": "entity.name.function: #DCDCAA",
+			"dark_modern": "entity.name.function: #DCDCAA",
+			"hc_light": "entity.name.function: #5E2CBC",
+			"light_modern": "entity.name.function: #795E26"
 		}
 	},
 	{
 		"c": "`",
-		"t": "source.js meta.var.expr.js string.js.taggedTemplate.commentTaggedTemplate.glsl punctuation.definition.string.template.begin.js",
+		"t": "source.js meta.var.expr.js string.js.taggedTemplate.directTaggedTemplate.js punctuation.definition.string.template.begin.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",
@@ -126,8 +112,8 @@
 		}
 	},
 	{
-		"c": "varying vec2 vUv;",
-		"t": "source.js meta.var.expr.js string.js.taggedTemplate.commentTaggedTemplate.glsl meta.embedded.block.glsl",
+		"c": "    ",
+		"t": "source.js meta.var.expr.js string.js.taggedTemplate.directTaggedTemplate.js meta.embedded.block.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -140,8 +126,22 @@
 		}
 	},
 	{
-		"c": "uniform mat3 uvTransform;",
-		"t": "source.js meta.var.expr.js string.js.taggedTemplate.commentTaggedTemplate.glsl meta.embedded.block.glsl",
+		"c": "1",
+		"t": "source.js meta.var.expr.js string.js.taggedTemplate.directTaggedTemplate.js meta.embedded.block.js constant.numeric.decimal.js",
+		"r": {
+			"dark_plus": "constant.numeric: #B5CEA8",
+			"light_plus": "constant.numeric: #098658",
+			"dark_vs": "constant.numeric: #B5CEA8",
+			"light_vs": "constant.numeric: #098658",
+			"hc_black": "constant.numeric: #B5CEA8",
+			"dark_modern": "constant.numeric: #B5CEA8",
+			"hc_light": "constant.numeric: #096D48",
+			"light_modern": "constant.numeric: #098658"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js string.js.taggedTemplate.directTaggedTemplate.js meta.embedded.block.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -154,8 +154,22 @@
 		}
 	},
 	{
-		"c": "void main() {",
-		"t": "source.js meta.var.expr.js string.js.taggedTemplate.commentTaggedTemplate.glsl meta.embedded.block.glsl",
+		"c": "+",
+		"t": "source.js meta.var.expr.js string.js.taggedTemplate.directTaggedTemplate.js meta.embedded.block.js keyword.operator.arithmetic.js",
+		"r": {
+			"dark_plus": "keyword.operator: #D4D4D4",
+			"light_plus": "keyword.operator: #000000",
+			"dark_vs": "keyword.operator: #D4D4D4",
+			"light_vs": "keyword.operator: #000000",
+			"hc_black": "keyword.operator: #D4D4D4",
+			"dark_modern": "keyword.operator: #D4D4D4",
+			"hc_light": "keyword.operator: #000000",
+			"light_modern": "keyword.operator: #000000"
+		}
+	},
+	{
+		"c": " ",
+		"t": "source.js meta.var.expr.js string.js.taggedTemplate.directTaggedTemplate.js meta.embedded.block.js",
 		"r": {
 			"dark_plus": "meta.embedded: #D4D4D4",
 			"light_plus": "meta.embedded: #000000",
@@ -168,22 +182,22 @@
 		}
 	},
 	{
-		"c": "}",
-		"t": "source.js meta.var.expr.js string.js.taggedTemplate.commentTaggedTemplate.glsl meta.embedded.block.glsl",
+		"c": "1",
+		"t": "source.js meta.var.expr.js string.js.taggedTemplate.directTaggedTemplate.js meta.embedded.block.js constant.numeric.decimal.js",
 		"r": {
-			"dark_plus": "meta.embedded: #D4D4D4",
-			"light_plus": "meta.embedded: #000000",
-			"dark_vs": "meta.embedded: #D4D4D4",
-			"light_vs": "meta.embedded: #000000",
-			"hc_black": "meta.embedded: #FFFFFF",
-			"dark_modern": "meta.embedded: #D4D4D4",
-			"hc_light": "meta.embedded: #292929",
-			"light_modern": "meta.embedded: #000000"
+			"dark_plus": "constant.numeric: #B5CEA8",
+			"light_plus": "constant.numeric: #098658",
+			"dark_vs": "constant.numeric: #B5CEA8",
+			"light_vs": "constant.numeric: #098658",
+			"hc_black": "constant.numeric: #B5CEA8",
+			"dark_modern": "constant.numeric: #B5CEA8",
+			"hc_light": "constant.numeric: #096D48",
+			"light_modern": "constant.numeric: #098658"
 		}
 	},
 	{
 		"c": "`",
-		"t": "source.js meta.var.expr.js string.js punctuation.definition.string.template.end.js",
+		"t": "source.js meta.var.expr.js string.js.taggedTemplate.directTaggedTemplate.js punctuation.definition.string.template.end.js",
 		"r": {
 			"dark_plus": "string: #CE9178",
 			"light_plus": "string: #A31515",

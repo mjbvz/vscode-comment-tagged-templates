@@ -120,7 +120,6 @@
     },
     "scripts": {
         "build": "node ./build/build",
-        "getEmbedded": "node ./build/getEmbedded",
         "test": "node ./test/index.mjs"
     }
 }

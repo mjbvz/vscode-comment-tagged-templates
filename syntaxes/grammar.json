@@ -182,6 +182,1467 @@
                     "include": "#commentTaggedTemplate-cypher"
                 }
             ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.css",
+            "contentName": "meta.embedded.block.css",
+            "begin": "(?i)(\\b(?:css|css\\.erb)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.css"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.basic",
+            "contentName": "meta.embedded.block.basic",
+            "begin": "(?i)(\\b(?:html|htm|shtml|xhtml|inc|tmpl|tpl)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.html.basic"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.ini",
+            "contentName": "meta.embedded.block.ini",
+            "begin": "(?i)(\\b(?:ini|conf)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.ini"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.java",
+            "contentName": "meta.embedded.block.java",
+            "begin": "(?i)(\\b(?:java|bsh)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.java"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.lua",
+            "contentName": "meta.embedded.block.lua",
+            "begin": "(?i)(\\b(?:lua)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.lua"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.makefile",
+            "contentName": "meta.embedded.block.makefile",
+            "begin": "(?i)(\\b(?:Makefile|makefile|GNUmakefile|OCamlMakefile)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.makefile"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.perl",
+            "contentName": "meta.embedded.block.perl",
+            "begin": "(?i)(\\b(?:perl|pl|pm|pod|t|PL|psgi|vcl)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.perl"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.r",
+            "contentName": "meta.embedded.block.r",
+            "begin": "(?i)(\\b(?:R|r|s|S|Rprofile)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.r"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.ruby",
+            "contentName": "meta.embedded.block.ruby",
+            "begin": "(?i)(\\b(?:ruby|rb|rbx|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile\\.lock|Thorfile|Puppetfile)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.ruby"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.php",
+            "contentName": "meta.embedded.block.php",
+            "begin": "(?i)(\\b(?:php|php3|php4|php5|phpt|phtml|aw|ctp)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.html.basic"
+                },
+                {
+                    "include": "source.php"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.sql",
+            "contentName": "meta.embedded.block.sql",
+            "begin": "(?i)(\\b(?:sql|ddl|dml)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.sql"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.vs_net",
+            "contentName": "meta.embedded.block.vs_net",
+            "begin": "(?i)(\\b(?:vb)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.asp.vb.net"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.xml",
+            "contentName": "meta.embedded.block.xml",
+            "begin": "(?i)(\\b(?:xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.xml"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.xsl",
+            "contentName": "meta.embedded.block.xsl",
+            "begin": "(?i)(\\b(?:xsl|xslt)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.xml.xsl"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.yaml",
+            "contentName": "meta.embedded.block.yaml",
+            "begin": "(?i)(\\b(?:yaml|yml)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.yaml"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.dosbatch",
+            "contentName": "meta.embedded.block.dosbatch",
+            "begin": "(?i)(\\b(?:bat|batch)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.dosbatch"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.clojure",
+            "contentName": "meta.embedded.block.clojure",
+            "begin": "(?i)(\\b(?:clj|cljs|clojure)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.clojure"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.coffee",
+            "contentName": "meta.embedded.block.coffee",
+            "begin": "(?i)(\\b(?:coffee|Cakefile|coffee\\.erb)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.coffee"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.c",
+            "contentName": "meta.embedded.block.c",
+            "begin": "(?i)(\\b(?:c|h)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.c"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.cpp",
+            "contentName": "meta.embedded.block.cpp",
+            "begin": "(?i)(\\b(?:cpp|c\\+\\+|cxx)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.cpp"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.diff",
+            "contentName": "meta.embedded.block.diff",
+            "begin": "(?i)(\\b(?:patch|diff|rej)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.diff"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.dockerfile",
+            "contentName": "meta.embedded.block.dockerfile",
+            "begin": "(?i)(\\b(?:dockerfile|Dockerfile)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.dockerfile"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.git_commit",
+            "contentName": "meta.embedded.block.git_commit",
+            "begin": "(?i)(\\b(?:COMMIT_EDITMSG|MERGE_MSG)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.git-commit"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.git_rebase",
+            "contentName": "meta.embedded.block.git_rebase",
+            "begin": "(?i)(\\b(?:git\\-rebase\\-todo)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.git-rebase"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.go",
+            "contentName": "meta.embedded.block.go",
+            "begin": "(?i)(\\b(?:go|golang)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.go"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.graphql",
+            "contentName": "meta.embedded.block.graphql",
+            "begin": "(?i)(\\b(?:gql|qgl|graphql)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.graphql"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.groovy",
+            "contentName": "meta.embedded.block.groovy",
+            "begin": "(?i)(\\b(?:groovy|gvy)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.groovy"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.pug",
+            "contentName": "meta.embedded.block.pug",
+            "begin": "(?i)(\\b(?:jade|pug)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.pug"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.js",
+            "contentName": "meta.embedded.block.js",
+            "begin": "(?i)(\\b(?:js|jsx|javascript|es6|mjs)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.js"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.js_regexp",
+            "contentName": "meta.embedded.block.js_regexp",
+            "begin": "(?i)(\\b(?:regexp)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.js.regexp"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.json",
+            "contentName": "meta.embedded.block.json",
+            "begin": "(?i)(\\b(?:json|sublime\\-settings|sublime\\-menu|sublime\\-keymap|sublime\\-mousemap|sublime\\-theme|sublime\\-build|sublime\\-project|sublime\\-completions)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.json"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.less",
+            "contentName": "meta.embedded.block.less",
+            "begin": "(?i)(\\b(?:less)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.css.less"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.md",
+            "contentName": "meta.embedded.block.md",
+            "begin": "(?i)(\\b(?:md|markdown)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "text.html.markdown"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.mjml",
+            "contentName": "meta.embedded.block.mjml",
+            "begin": "(?i)(\\b(?:mjml)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.mjml"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.objc",
+            "contentName": "meta.embedded.block.objc",
+            "begin": "(?i)(\\b(?:objectivec|objective\\-c|mm|objc|obj\\-c|m|h)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.objc"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.scss",
+            "contentName": "meta.embedded.block.scss",
+            "begin": "(?i)(\\b(?:scss)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.css.scss"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.perl6",
+            "contentName": "meta.embedded.block.perl6",
+            "begin": "(?i)(\\b(?:perl6|p6|pl6|pm6|nqp)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.perl.6"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.powershell",
+            "contentName": "meta.embedded.block.powershell",
+            "begin": "(?i)(\\b(?:powershell|ps1|psm1|psd1)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.powershell"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.python",
+            "contentName": "meta.embedded.block.python",
+            "begin": "(?i)(\\b(?:python|py|py3|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gyp|gypi)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.python"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.regexp_python",
+            "contentName": "meta.embedded.block.regexp_python",
+            "begin": "(?i)(\\b(?:re)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.regexp.python"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.rust",
+            "contentName": "meta.embedded.block.rust",
+            "begin": "(?i)(\\b(?:rust|rs)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.rust"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.scala",
+            "contentName": "meta.embedded.block.scala",
+            "begin": "(?i)(\\b(?:scala|sbt)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.scala"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.shell",
+            "contentName": "meta.embedded.block.shell",
+            "begin": "(?i)(\\b(?:shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|\\.textmate_init)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.shell"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.ts",
+            "contentName": "meta.embedded.block.ts",
+            "begin": "(?i)(\\b(?:typescript|ts)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.ts"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.tsx",
+            "contentName": "meta.embedded.block.tsx",
+            "begin": "(?i)(\\b(?:tsx)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.tsx"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.csharp",
+            "contentName": "meta.embedded.block.csharp",
+            "begin": "(?i)(\\b(?:cs|csharp|c\\#)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.cs"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.fsharp",
+            "contentName": "meta.embedded.block.fsharp",
+            "begin": "(?i)(\\b(?:fs|fsharp|f\\#)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.fsharp"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.dart",
+            "contentName": "meta.embedded.block.dart",
+            "begin": "(?i)(\\b(?:dart)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.dart"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.glsl",
+            "contentName": "meta.embedded.block.glsl",
+            "begin": "(?i)(\\b(?:glsl)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.glsl"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.liquid",
+            "contentName": "meta.embedded.block.liquid",
+            "begin": "(?i)(\\b(?:liquid)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.liquid"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.sparql",
+            "contentName": "meta.embedded.block.sparql",
+            "begin": "(?i)(\\b(?:sparql)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.sparql"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.applescript",
+            "contentName": "meta.embedded.block.applescript",
+            "begin": "(?i)(\\b(?:applescript)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.applescript"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.edgeql",
+            "contentName": "meta.embedded.block.edgeql",
+            "begin": "(?i)(\\b(?:edgeql)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.edgeql"
+                },
+                {
+                    "match": "."
+                }
+            ]
+        },
+        {
+            "name": "string.js.taggedTemplate.directTaggedTemplate.cypher",
+            "contentName": "meta.embedded.block.cypher",
+            "begin": "(?i)(\\b(?:cypher|cyp|cql)\\b)\\s*(`)",
+            "beginCaptures": {
+                "1": {
+                    "name": "entity.name.function.tagged-template.js"
+                },
+                "2": {
+                    "name": "punctuation.definition.string.template.begin.js"
+                }
+            },
+            "end": "`",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.cypher"
+                },
+                {
+                    "match": "."
+                }
+            ]
         }
     ],
     "scopeName": "inline.template-tagged-languages",
