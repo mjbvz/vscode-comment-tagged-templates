@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { languages, type Language } from './languages.ts';
 
-const targetScopes = ['source.js', 'source.jsx', 'source.js.jsx', 'source.ts', 'source.tsx']
+const targetScopes = ['source.js', 'source.jsx', 'source.js.jsx', 'source.ts', 'source.tsx', 'source.vue']
 
 const basicGrammarTemplate = {
     "fileTypes": [] as string[],
