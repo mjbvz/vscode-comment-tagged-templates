@@ -116,7 +116,7 @@
     },
     "devDependencies": {
         "@vscode/test-electron": "^2.3.0",
-        "mocha": "^10.2.0"
+        "mocha": "^10.8.2"
     },
     "scripts": {
         "build": "node ./build/build",
