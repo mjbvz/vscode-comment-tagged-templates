@@ -911,6 +911,20 @@
             "end": "(?=`)",
             "patterns": [
                 {
+                    "begin": "\\s*(---)\\s*$",
+                    "beginCaptures": {
+                        "0": { "name": "punctuation.definition.front-matter.markdown" }
+                    },
+                    "end": "^\\s*(---)\\s*$",
+                    "endCaptures": {
+                        "0": { "name": "punctuation.definition.front-matter.markdown" }
+                    },
+                    "name": "meta.embedded.block.front-matter.yaml",
+                    "patterns": [
+                        { "include": "source.yaml" }
+                    ]
+                },
+                {
                     "include": "text.html.markdown"
                 },
                 {
