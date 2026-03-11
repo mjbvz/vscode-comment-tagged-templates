@@ -110,6 +110,8 @@ The main grammar is generated using the script in `build/build.js`. To run it:
 npm run build
 ```
 
+The generate grammar files will be written to the `syntaxes` directory. The grammar files are regenerated on each build so you should not make manual changes in them.
+
 The supported languages are defined in `build/languages.js`
 
 To run the tests:
