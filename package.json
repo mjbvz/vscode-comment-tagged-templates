@@ -39,7 +39,8 @@
                     "source.tsx",
                     "text.html.basic",
                     "text.html.derivative",
-                    "text.html.markdown"
+                    "text.html.markdown",
+                    "text.html.vue"
                 ],
                 "scopeName": "inline.template-tagged-languages",
                 "path": "./syntaxes/grammar.json",
@@ -106,7 +107,8 @@
                     "source.tsx",
                     "text.html.basic",
                     "text.html.derivative",
-                    "text.html.markdown"
+                    "text.html.markdown",
+                    "text.html.vue"
                 ],
                 "scopeName": "inline.template-tagged-languages.reinjection",
                 "path": "./syntaxes/reinject-grammar.json",
