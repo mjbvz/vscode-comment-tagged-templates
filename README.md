@@ -78,6 +78,7 @@ The language identifier comment must appear before the opening backtick for the 
 | edgeql | edgeql |
 | cypher | cypher, cyp, cql |
 | prql | prql |
+| svg | svg |
 <!--END_LANG_TABLE-->
 
 ## Advanced language support

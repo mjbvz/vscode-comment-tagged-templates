@@ -94,7 +94,8 @@
                     "meta.embedded.block.applescript": "applescript",
                     "meta.embedded.block.edgeql": "edgeql",
                     "meta.embedded.block.cypher": "cypher",
-                    "meta.embedded.block.prql": "prql"
+                    "meta.embedded.block.prql": "prql",
+                    "meta.embedded.block.svg": "xml"
                 }
             },
             {
