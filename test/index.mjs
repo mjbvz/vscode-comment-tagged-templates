@@ -1,3 +1,4 @@
+//@ts-check
 import { runTests } from '@vscode/test-electron';
 import * as path from 'path';
 
