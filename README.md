@@ -79,6 +79,7 @@ The language identifier comment must appear before the opening backtick for the 
 | cypher | cypher, cyp, cql |
 | prql | prql |
 | latex | latex, tex |
+| svg | svg |
 <!--END_LANG_TABLE-->
 
 ## Advanced language support
