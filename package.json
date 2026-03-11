@@ -4,6 +4,7 @@
     "description": "Syntax highlighting for tagged template strings using comments to specify language",
     "version": "0.3.3",
     "publisher": "bierner",
+    "type": "module",
     "galleryBanner": {
         "color": "#ffffff",
         "theme": "light"
@@ -116,12 +117,13 @@
         ]
     },
     "devDependencies": {
+        "@types/node": "^22.0.0",
         "@vscode/test-electron": "^2.3.0",
-        "mocha": "^10.8.2"
+        "mocha": "^11.7.5"
     },
     "scripts": {
-        "build": "node ./build/build",
-        "getEmbedded": "node ./build/getEmbedded",
-        "test": "node ./test/index.mjs"
+        "vscode:prepublish": "npm run build",
+        "build": "node ./build/build.ts",
+        "test": "node ./test/index.ts"
     }
 }

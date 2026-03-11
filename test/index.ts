@@ -1,13 +1,10 @@
-//@ts-check
 import { runTests } from '@vscode/test-electron';
 import * as path from 'path';
 
-const __dirname = new URL('.', import.meta.url).pathname;
-
 async function go() {
     try {
-        const extensionDevelopmentPath = path.resolve(__dirname, '..');
-        const extensionTestsPath = path.resolve(__dirname, 'suite');
+        const extensionDevelopmentPath = path.resolve(import.meta.dirname, '..');
+        const extensionTestsPath = path.resolve(import.meta.dirname, 'suite');
 
         /**
          * Basic usage
@@ -17,9 +14,9 @@ async function go() {
             extensionTestsPath,
         });
     } catch (err) {
-		console.error('Failed to run tests', err);
-		process.exit(1);
-	}
+        console.error('Failed to run tests', err);
+        process.exit(1);
+    }
 }
 
 go();

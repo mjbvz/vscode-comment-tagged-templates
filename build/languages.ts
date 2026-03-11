@@ -9,7 +9,14 @@
  *
  * source: Name of the toplevel textmate scope for the language
  */
-const languages = [
+export interface Language {
+    name: string;
+    language?: string;
+    identifiers: string[];
+    source: string | string[];
+}
+
+export const languages: Language[] = [
     { name: 'css', language: 'css', identifiers: ['css', 'css.erb'], source: 'source.css' },
     { name: 'basic', language: 'html', identifiers: ['html', 'htm', 'shtml', 'xhtml', 'inc', 'tmpl', 'tpl'], source: 'text.html.basic' },
     { name: 'ini', language: 'ini', identifiers: ['ini', 'conf'], source: 'source.ini' },
@@ -69,4 +76,3 @@ const languages = [
     { name: 'cypher', language: 'cypher', identifiers: ['cypher', 'cyp', 'cql'], source: 'source.cypher' },
     { name: 'prql', language: 'prql', identifiers: ['prql'], source: 'source.prql' },
 ];
-exports.languages = languages;

@@ -1,20 +1,19 @@
-// @ts-check
-
-const fs = require('fs');
-const path = require('path');
-const { languages } = require('./languages');
+import fs from 'node:fs';
+import path from 'node:path';
+import { languages, type Language } from './languages.ts';
 
 const targetScopes = ['source.js', 'source.jsx', 'source.js.jsx', 'source.ts', 'source.tsx']
 
 const basicGrammarTemplate = {
-    "fileTypes": [],
+    "fileTypes": [] as string[],
     "injectionSelector": getBasicGrammarInjectionSelector(),
-    "patterns": [],
-    "scopeName": "inline.template-tagged-languages"
+    "patterns": [] as unknown[],
+    "scopeName": "inline.template-tagged-languages",
+    "repository": {} as Record<string, unknown>,
 };
 
 const reinjectGrammarTemplate = {
-    "fileTypes": [],
+    "fileTypes": [] as string[],
     "injectionSelector": getReinjectGrammarInjectionSelector(),
     "patterns": [
         {
@@ -24,7 +23,7 @@ const reinjectGrammarTemplate = {
     "scopeName": "inline.template-tagged-languages.reinjection"
 };
 
-const getBasicGrammarPattern = (language) => {
+const getBasicGrammarPattern = (language: Language) => {
     const sources = Array.isArray(language.source) ? language.source : [language.source];
     return {
         name: `string.js.taggedTemplate.commentTaggedTemplate.${language.name}`,
@@ -51,12 +50,12 @@ const getBasicGrammarPattern = (language) => {
 const getBasicGrammar = () => {
     const basicGrammar = basicGrammarTemplate;
 
-    basicGrammar.repository = languages.reduce((repository, language) => {
+    basicGrammar.repository = languages.reduce((repository: Record<string, unknown>, language) => {
         repository[getRepositoryName(language)] = getBasicGrammarPattern(language);
         return repository;
     }, {});
 
-    const allLanguageIdentifiers = [].concat(...languages.map(x => x.identifiers));
+    const allLanguageIdentifiers = ([] as string[]).concat(...languages.map(x => x.identifiers));
     basicGrammar.patterns = [
         {
             // Match entire language comment identifier but only consume '/'
@@ -76,17 +75,17 @@ const getBasicGrammar = () => {
     return basicGrammar;
 };
 
-function getRepositoryName(langauge) {
-    return 'commentTaggedTemplate-' + langauge.name;
+function getRepositoryName(language: Language): string {
+    return 'commentTaggedTemplate-' + language.name;
 }
 
-function getBasicGrammarInjectionSelector() {
+function getBasicGrammarInjectionSelector(): string {
     return targetScopes
         .map(scope => `L:${scope} -comment -(string - meta.embedded)`)
         .join(', ');
 }
 
-function getReinjectGrammarInjectionSelector() {
+function getReinjectGrammarInjectionSelector(): string {
     return targetScopes
         .map(scope => {
             const embeddedScopeSelectors = languages.map(language => `meta.embedded.block.${language.name}`);
@@ -95,20 +94,20 @@ function getReinjectGrammarInjectionSelector() {
         .join(', ');
 }
 
-function escapeRegExp(text) {
+function escapeRegExp(text: string): string {
     return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
 }
 
-function writeJson(outFile, json) {
+function writeJson(outFile: string, json: unknown): void {
     fs.writeFileSync(outFile, JSON.stringify(json, null, 4));
 }
 
-exports.updateGrammars = () => {
-    const outDir = path.join(__dirname, '..', 'syntaxes');
+export function updateGrammars(): void {
+    const outDir = path.join(import.meta.dirname, '..', 'syntaxes');
+    fs.mkdirSync(outDir, { recursive: true });
     writeJson(path.join(outDir, 'grammar.json'), getBasicGrammar());
 
     writeJson(
         path.join(outDir, 'reinject-grammar.json'),
         reinjectGrammarTemplate);
-};
-
+}
