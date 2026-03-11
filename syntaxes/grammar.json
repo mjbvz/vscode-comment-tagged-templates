@@ -422,7 +422,15 @@
                 }
             },
             "end": "(?=`)",
+            "endCaptures": {
+                "1": {
+                    "name": "punctuation.definition.string.template.end.js"
+                }
+            },
             "patterns": [
+                {
+                    "match": "\\\\`", "name": "constant.character.escape.js"
+                },
                 {
                     "include": "source.sql"
                 },
