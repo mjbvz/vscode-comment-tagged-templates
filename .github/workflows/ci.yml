@@ -20,4 +20,9 @@ jobs:
 
       - run: npm run build
 
+      - name: Check for uncommitted changes
+        run: |
+          git diff --exit-code
+          git diff --cached --exit-code
+
       - run: xvfb-run -a npm test

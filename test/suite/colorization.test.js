@@ -7,67 +7,51 @@
 
 const assert = require('assert');
 const { commands, Uri } = require('vscode');
-const { join, basename, normalize, dirname } = require('path');
+const { join, basename, dirname } = require('path');
 const fs = require('fs');
 
-function assertUnchangedTokens(testFixurePath, done) {
-    let fileName = basename(testFixurePath);
+async function assertUnchangedTokens(testFixturePath) {
+    const fileName = basename(testFixturePath);
+    const data = await commands.executeCommand('_workbench.captureSyntaxTokens', Uri.file(testFixturePath));
 
-    return commands.executeCommand('_workbench.captureSyntaxTokens', Uri.file(testFixurePath)).then(data => {
+    const resultsFolderPath = join(dirname(dirname(testFixturePath)), 'colorize-results');
+    fs.mkdirSync(resultsFolderPath, { recursive: true });
+
+    const resultPath = join(resultsFolderPath, fileName.replace('.', '_') + '.json');
+    if (fs.existsSync(resultPath)) {
+        const previousData = JSON.parse(fs.readFileSync(resultPath, 'utf8'));
         try {
-            let resultsFolderPath = join(dirname(dirname(testFixurePath)), 'colorize-results');
-            if (!fs.existsSync(resultsFolderPath)) {
-                fs.mkdirSync(resultsFolderPath);
-            }
-            let resultPath = join(resultsFolderPath, fileName.replace('.', '_') + '.json');
-            if (fs.existsSync(resultPath)) {
-                let previousData = JSON.parse(fs.readFileSync(resultPath).toString());
-                try {
-                    assert.deepEqual(data, previousData);
-                } catch (e) {
-                    fs.writeFileSync(resultPath, JSON.stringify(data, null, '\t'), { flag: 'w' });
-                    if (Array.isArray(data) && Array.isArray(previousData) && data.length === previousData.length) {
-                        for (let i = 0; i < data.length; i++) {
-                            let d = data[i];
-                            let p = previousData[i];
-                            if (d.c !== p.c || hasThemeChange(d.r, p.r)) {
-                                throw e;
-                            }
-                        }
-                        // different but no tokenization ot color change: no failure
-                    } else {
+            assert.deepStrictEqual(data, previousData);
+        } catch (e) {
+            fs.writeFileSync(resultPath, JSON.stringify(data, null, '\t'));
+            if (Array.isArray(data) && Array.isArray(previousData) && data.length === previousData.length) {
+                for (let i = 0; i < data.length; i++) {
+                    const d = data[i];
+                    const p = previousData[i];
+                    if (d.c !== p.c || hasThemeChange(d.r, p.r)) {
                         throw e;
                     }
                 }
+                // different but no tokenization or color change: no failure
             } else {
-                fs.writeFileSync(resultPath, JSON.stringify(data, null, '\t'));
+                throw e;
             }
-            done();
-        } catch (e) {
-            done(e);
         }
-    }, done);
+    } else {
+        fs.writeFileSync(resultPath, JSON.stringify(data, null, '\t'));
+    }
 }
 
 function hasThemeChange(d, p) {
-    let keys = Object.keys(d);
-    for (let key of keys) {
-        if (d[key] !== p[key]) {
-            return true;
-        }
-    }
-    return false;
-};
+    return Object.keys(d).some(key => d[key] !== p[key]);
+}
 
 suite('colorization', () => {
-    let extensionColorizeFixturePath = join(__dirname, 'colorize-fixtures');
+    const extensionColorizeFixturePath = join(__dirname, 'colorize-fixtures');
     if (fs.existsSync(extensionColorizeFixturePath)) {
-        let fixturesFiles = fs.readdirSync(extensionColorizeFixturePath);
-        fixturesFiles.forEach(fixturesFile => {
-            // define a test for each fixture
-            test(fixturesFile, function (done) {
-                assertUnchangedTokens(join(extensionColorizeFixturePath, fixturesFile), done);
-            });
-        });
+        // define a test for each fixture
+        for (const fixturesFile of fs.readdirSync(extensionColorizeFixturePath)) {
+            test(fixturesFile, () => assertUnchangedTokens(join(extensionColorizeFixturePath, fixturesFile)));
+        }
     }
 });
