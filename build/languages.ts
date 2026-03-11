@@ -75,5 +75,6 @@ export const languages: Language[] = [
     { name: 'edgeql', language: 'edgeql', identifiers: ['edgeql'], source: 'source.edgeql' },
     { name: 'cypher', language: 'cypher', identifiers: ['cypher', 'cyp', 'cql'], source: 'source.cypher' },
     { name: 'prql', language: 'prql', identifiers: ['prql'], source: 'source.prql' },
+    { name: 'latex', language: 'latex', identifiers: ['latex', 'tex'], source: 'text.tex.latex' },
     { name: 'svg', language: 'xml', identifiers: ['svg'], source: 'text.xml' },
 ];
