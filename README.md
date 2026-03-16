@@ -72,6 +72,7 @@ The language identifier comment must appear before the opening backtick for the 
 | fsharp | fs, fsharp, f# |
 | dart | dart |
 | glsl | glsl |
+| wgsl | wgsl |
 | liquid | liquid |
 | sparql | sparql |
 | applescript | applescript |

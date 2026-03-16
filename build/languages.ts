@@ -69,6 +69,7 @@ export const languages: Language[] = [
     { name: 'fsharp', language: 'fsharp', identifiers: ['fs', 'fsharp', 'f#'], source: 'source.fsharp' },
     { name: 'dart', language: 'dart', identifiers: ['dart'], source: 'source.dart' },
     { name: 'glsl', language: 'glsl', identifiers: ['glsl'], source: 'source.glsl' },
+    { name: 'wgsl', language: 'wgsl', identifiers: ['wgsl'], source: 'source.wgsl' },
     { name: 'liquid', language: 'liquid', identifiers: ['liquid'], source: 'source.liquid' },
     { name: 'sparql', language: 'sparql', identifiers: ['sparql'], source: 'source.sparql' },
     { name: 'applescript', language: 'applescript', identifiers: ['applescript'], source: 'source.applescript' },
