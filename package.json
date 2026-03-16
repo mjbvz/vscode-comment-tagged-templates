@@ -89,6 +89,7 @@
                     "meta.embedded.block.fsharp": "fsharp",
                     "meta.embedded.block.dart": "dart",
                     "meta.embedded.block.glsl": "glsl",
+                    "meta.embedded.block.wgsl": "wgsl",
                     "meta.embedded.block.liquid": "liquid",
                     "meta.embedded.block.sparql": "sparql",
                     "meta.embedded.block.applescript": "applescript",
