@@ -96,7 +96,8 @@
                     "meta.embedded.block.cypher": "cypher",
                     "meta.embedded.block.prql": "prql",
                     "meta.embedded.block.latex": "latex",
-                    "meta.embedded.block.svg": "xml"
+                    "meta.embedded.block.svg": "xml",
+                    "meta.embedded.block.vue": "vue"
                 }
             },
             {

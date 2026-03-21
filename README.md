@@ -80,6 +80,7 @@ The language identifier comment must appear before the opening backtick for the 
 | prql | prql |
 | latex | latex, tex |
 | svg | svg |
+| vue | vue |
 <!--END_LANG_TABLE-->
 
 ## Advanced language support
